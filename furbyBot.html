@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furby Bot</title>
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-UciKZ2-g.js"></script>
+    <link rel="stylesheet" crossorigin href="/web-layout-training-vite/assets/main-BFf7ynq9.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-orange-100 link-neutral-900">
+      <div class="container-fluid px-5 justify-content-start">
+        <a class="nav-link" href="#">返回</a>
+        <a
+          class="nav-link active fw-bold fs-5 ms-8"
+          aria-current="page"
+          href="#"
+        >
+          Furby bot
+        </a>
+        <div class="d-flex ms-auto">
+          <a class="nav-link px-ten" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIXSURBVHgB7VRRbhJhEJ75t+WZnsD1BnoC8c1UjMvqgzES/56A5QRbTlA4gCmWanwR/igY38ATWE8gnsAmtQ/S3RlnulLBUtg+NU06CRD2n/+bb75vZgFu4qoD8ybaIPDZpDUkr9V2bpz3nsmbmJpJiYEjMsnXavgwynsvd4FpMMAIAXeqlfJQu1qVf+kCBShEDLSFyH6eblZ6oCwFyEpqTfgX16Hgv+p2fzwLHvjrxoulG8sMI4/XthZ5g0uAi4TJtmTU9L+CoAG3977fms2rhptWisQCVRSPGp3uoLmyQMY6HQqsz8TNIzhuODc6vIALzHYDjGPD3v1pN7gEvMiMQaf38QvkDDUeEWTawHW6/Yo+W/s/SWY9VuYJ0d237tNBHuBMzpMmKLhIecJJfXo2V6AaPrKioyWCaBZcAeRHP4fS+pxU9mm5RJTuihi+3tt38x7NSfTySXkomvt7vcHtU1YmiRD4MQPemeYY+rXR/uuHENLzHZmAMYOxi+TEGZY6jt+B2LIxG3IQZz7I9CCMpDNfTdQxTYmQvWRXznS720d0XL9oCM4kSk1a0mqIMgnAp1qKWdF+r/8tY7spz9FO4HcFjYl1pTNJBi1YEmcFZKXvyR2ZMhBNYVu0bCy6oK8JYDqYcFp55z6PYUX8M1lWX1mlZOwb9+H1OWD2fsoX6F503KAOlw2V4EVQri3LeR6Gt+Amrl38AUhuCIQuJBVbAAAAAElFTkSuQmCC" alt="share" />
+          </a>
+          <a class="nav-link px-ten" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAICAYAAAD9aA/QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGLSURBVHgBjZFPTsJQEMZnHsWVC9y5k6XLegNc20WLO+MfOAFwAjhCOQGNJO60TQS34AnEHUtOoBhjYkI748wrRWJMdJKmr9/35jev3yvBVjV8v+oeHsJsPv+EH/WHVxFvX7xloeHacMlkMQBXcxEjpPdOlEyXCuRSOmCGmvUQppg5zShJFvp9GZxEIl5ZGuMi5Sy4SR5mRqdZKJN0cYMJQwZukNlt2b051CWCnkxsM6ObYTrIoV6o0MIDJHCwFDf8WgXPTz3fMMTSUBvG94/acHHqxcjsGiofkUlften6dtS3sLrXlVevDDvVFaymDDQd3o2b6p37Xs0YmMghfVNkwkIu1oZxCWyXldxcv20WxuaY0csbAIEB3HiO85075lGsnoBlhsFQpu2J3mXicJiMOxeBN5FcXQH2cg9bcojZMB4dF6dH4FCeZ4JSVyM1/HFk5BKWKZUDzUfE0EKBI4Xq5BWnTcl4tvEEqpr9M3L6upcB24IbKDRlDvTSYbvO6vUDX4KHX0p19f/rfQEHZteIgiJ+PAAAAABJRU5ErkJggg==" alt="share" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- 聊天室 -->
+    <div class="container bg-white px-5">
+      <!-- 開頭 -->
+      <div
+        class="d-flex rounded-3 bg-orange-200 overflow-hidden mt-4 mb-5 position-relative"
+      >
+        <div class="circle rounded-circle bg-secondary z-0"></div>
+        <div class="z-1">
+          <img src="/web-layout-training-vite/assets/character-assets-BN4PpzUE.png" alt="Furby" />
+        </div>
+        <div class="px-3 py-3 z-1">
+          <div class="px-2 mb-2">
+            <p class="fw-bold text-neutral-900 mb-0">
+              Hi Simon，我是 Furby ！需要幫忙嗎？
+            </p>
+          </div>
+          <div class="p-2">
+            <p class="fs-small text-neutral-transparent-80 lh-sm mb-0">
+              我能幫你新增記錄、設定提醒，還能回答關於照護問題與分析建議～
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 今天標籤 -->
+      <div class="container d-flex justify-content-center mb-5 py-1">
+        <span
+          class="badge rounded-pill text-bg-neutral-transparent-30"
+          style="--bs-bg-opacity: 0.3"
+          >今天</span
+        >
+      </div>
+      <!-- 選擇毛孩 -->
+      <div class="mb-5">
+        <!-- 訊息框 頭像 -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="/web-layout-training-vite/assets/head%201-DV7jljMa.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBzZbPTcMwFMa/51QcgEOjqkA5pRMAE8AGsAFlAsoENBMAE5QRygZlAroBPRH+VYkQ4lBiP/wqkChyIAhH4ndJ4jj+8uzn75nwS9L0um7yxS6BtkEcMSOSdiLKwGZESg2g9EUYtsZFYxBKkqZJxHnQZ/BOqQ+IzlWgY5e4KvP95P62yzq4Ki0oMHdMrq4mtzfdr69+jHTycNezl2P8BWPixmqrV0pUIrTTdAIfaH3UWFs//VZ0toYypcx1+CFTNbMla1y4pkYHxx4FhTrn1JcbZ6QSpU2Ca1SAqr2EzkiNCXZREXaPHzpFyWAPFUF22zlFGdhERTBTVJBIXhNoHkJUypF84xYljFEdmTuRmMaoCOvfI3ciKRqiIogxKDCH1NbMaYoKmOam7Yw0DMPMFukRfMM4b7UKvHdm9mDPe5WyqTax3Llt0Jo9fMOmJ1E6RR/vk45Uffil11hZO/t4mBOVok2k+vCGHNa422iuxnOtcrqDWdpna/LfnYHsu+Fs/xI6KIH0f8354GNKP1MDljeM1hGTsuPZP/vsu+JMhgeKgkHYbF5KU5Ik8cJCsCs/SbPC8N7f9rVFf2zHGD49v5y12+0M/4k3ZXjJZFclh64AAAAASUVORK5CYII="
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              請先選擇毛孩，我們再一起看看需要做什麼吧！
+            </p>
+          </div>
+          <div class="ms-2 pt-forty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 卡片 -->
+        <div class="d-flex">
+          <!-- 狗 -->
+          <div
+            class="card border-neutral-900 ms-6"
+            style="--bs-border-opacity: 0.3"
+          >
+            <div class="text-center px-5 mt-3">
+              <img
+                src="/web-layout-training-vite/assets/pet-avatar-dog-plN_kzhw.png"
+                class=""
+                alt="dog"
+                style="width: 56px; height: 56px"
+              />
+            </div>
+            <div class="card-body text-primary py-2">
+              <h5
+                class="card-title fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                來福
+              </h5>
+              <p
+                class="card-text fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                日常追蹤
+              </p>
+            </div>
+          </div>
+          <!-- 貓 -->
+          <div
+            class="card border-neutral-900 ms-3"
+            style="--bs-border-opacity: 0.3"
+          >
+            <div class="text-center px-5 mt-3">
+              <img
+                src="/web-layout-training-vite/assets/pet-avatar-cat-DNjafocG.png"
+                class=""
+                alt="cat"
+                style="width: 56px; height: 56px"
+              />
+            </div>
+            <div class="card-body text-primary py-2">
+              <h5
+                class="card-title fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                來福
+              </h5>
+              <p
+                class="card-text fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                日常追蹤
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 選擇毛孩回覆 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgBxZbBUcJAFIb/t2F01AscdAZPsQNSAXYAJcQKhAoIFSgVgB1AB9iAoQNyEh0uOXnASda3AQeDm0wcd4fvwvCykz/vvd3/LaEEuQzr6Tl6RGhDwpWAmz0gxJRiIQWmmwSzs6YX4Q+QVmwVutLBWErcotpbJiw+rCouDgPJW9hLHYSVBbOvhH8iECavYa/K8lymyXsY8M8A/yHF0Gl6AaqIqgz53wNMkKDvXHuPKBNVPVQl5TLVYYZ4k8Ir6nHWUxYcGBRU1E8J46KHlGUpsIQFxAcadOPFv+KcZQeW4DN+r4sLbmoXlqCCYyfYZVqwhKSdgx2KGt5Ah7jQih4B1dMI9oh1QcH2EMES7N8LXVxws+ewBFdxqosLUcMIlthIzHRxQQ0vJjvZLkq9lxLcqdsAzNJSNw8Uiqov4jkIw6QX+tmcH+LrcMDiAQzCG9WvXXlPP2M5c3AuvSE7VN9kqdl/J8kqu5HsY7qFu3GnSuOjAnwe5yTYTmWpj0ecdfCZ4JlKX7a9UXR4KHRJDYa9T0csFKldzzNz9D0z5fqlnabkYztEWjlBtZ53tHDkFMfgC7oXnimKf7r4AAAAAElFTkSuQmCC"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            Mica
+          </p>
+        </div>
+      </div>
+      <!-- 幫Mica做什麼 -->
+      <div class="mb-5">
+        <!-- 訊息框 頭像 -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="/web-layout-training-vite/assets/head%201-DV7jljMa.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBzZbPTcMwFMa/51QcgEOjqkA5pRMAE8AGsAFlAsoENBMAE5QRygZlAroBPRH+VYkQ4lBiP/wqkChyIAhH4ndJ4jj+8uzn75nwS9L0um7yxS6BtkEcMSOSdiLKwGZESg2g9EUYtsZFYxBKkqZJxHnQZ/BOqQ+IzlWgY5e4KvP95P62yzq4Ki0oMHdMrq4mtzfdr69+jHTycNezl2P8BWPixmqrV0pUIrTTdAIfaH3UWFs//VZ0toYypcx1+CFTNbMla1y4pkYHxx4FhTrn1JcbZ6QSpU2Ca1SAqr2EzkiNCXZREXaPHzpFyWAPFUF22zlFGdhERTBTVJBIXhNoHkJUypF84xYljFEdmTuRmMaoCOvfI3ciKRqiIogxKDCH1NbMaYoKmOam7Yw0DMPMFukRfMM4b7UKvHdm9mDPe5WyqTax3Llt0Jo9fMOmJ1E6RR/vk45Uffil11hZO/t4mBOVok2k+vCGHNa422iuxnOtcrqDWdpna/LfnYHsu+Fs/xI6KIH0f8354GNKP1MDljeM1hGTsuPZP/vsu+JMhgeKgkHYbF5KU5Ik8cJCsCs/SbPC8N7f9rVFf2zHGD49v5y12+0M/4k3ZXjJZFclh64AAAAASUVORK5CYII="
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              今天想幫 Mica 做什麼呢？目前正在減重中，你可以做這些..
+            </p>
+          </div>
+          <div class="ms-2 pt-forty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 清單 -->
+        <div class="d-flex position-relative overflow-x-auto">
+          <div class="card ms-6 border-0" style="width: 200px">
+            <div
+              class="card-header position-relative bg-secondary-dark py-4 ps-4"
+            >
+              <p class="fs-little fw-bold text-white mb-0">你可能會需要的</p>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA5mSURBVHgB7VpZrF1VGf7W2vvcub23ty0ipRMtk2kxgmlAEWocecHAiw9GHowJiUN8wcQoxqFBUXzRxAdKVBKHhBAMqRijAYRigRaKtaAUW0qhw+1t7zycae+9lv+a1z495148T5Cwk3PP2Xuvtfb//cP3///aF3jveHcfDO/cg9NHSvrzo1sHt1cKcfPOrYOr9h6ZnwUXe/cPZYcffhiFHSc6LfJOBKhk4rds3Zre/1X50PrNKz4nFlKIhkCjWkfKcyCvopct4szZ7KUfPF25bfe+6ZN2rmy32DvpUPLIl+++9PZtN1/2SHNqRVEsTiWitghZ5BB5pr/Vob6zZkOsLCb48bFVv/zA7smv0eWEPkXrgp0ehJ07dya37xi9eLI+xysZl1khWCXhsv2UOrK05V6NPv3RbzoqdkzWTPzYHnvtaLO/dt91//zO6JU33FVMLYh8fpyLRh1F3kRPIsBEBiEk6vVcO68sCvWR2fSklPXB5y65f+FGp6TlAOL44Yfu3rx95y5ZHaNBaryw89wUt4aIlpLhFqM/koX7jJmI0t9qDF1nFD5SWYS+OYN46zDYkT/JXCTIJk4xKQpyzRqZpYmDL5zHzPl5rBntxzXXjaJea9IStAZ9BCmgMVMV1erwg1c9OPPlSDikbbCxQ3t+/KmNWz66S77+pJbSj5YygNGyCyMwnMCx8uxvAiFJ60wDli1KUGsU+noxMIrs8ftQ2XwDy069Ag2uWdfCD/QLjI8t4INbOAFroOC9NJUA0jOlyPVClaEetmph9kvf+vDwPfe+OHvCaZa3ASg3XnvDz9i5AySVQ4IgGEO4xCIHUNZg7ia34BKtBOaspsboe9Gy6keSonrgIfRtuR7Z6Ze10AqcLDLthqIQSCvcGJ+Z9dUYZUGlPKncle5Wh5j4/KXNvyFi1XYA0defDJHrsGAxGQFAsBQLMupzGd1TS8vCnkeWhnFTpT1tdfVrYATs5AFkC9MQGVnGg8vNGgSw0EBoVbUsWVd7hZNBrUM3kwrjo2l9y861a4eWBGjkEEGgSBgjuLBxJCNAsVVczEZWovPY1Zm/LpEtziJNGYq5c5opKynNJdcsmuqToZEXKKyuRCHRIJKR1uOJY9BTMVakMMYCOc2N6xY/6R6VtkdnCIApH/fBwsI9Z0VlCSWstNel1ZcmDwtex6nRJXPW03NCrGbTZ8lLUwKj8pzAs/vGUJ9eRH+feSYZFddsoqjLGHr7JI4dOoVMh65RUKXShysuB5oFxRQhqmTNa+nGo0sA1FJoQbz7IVhKBbeLKyMos6AseBmdR65pyNVaz7GqUk1jEVzlObozUClw9nQVO67maGTmmepZQsUyLVnQ2quGzVTjSAx5vQnev5pS0aSmjXojH3VIOrio1S5nZetZemeMhzHakjKAcfe8S8Nb03BWxLr2XtK/EsXCrPI3LCzkuP66EdSzCpEPfXiFQKXa/ppwKR6FsgunD1kdlFLed+UlqE9O6LhsNCWxbs+UQ5IuhQ+yJe8Z1UeC21zmL7vzKC4hI2sFq4W8SC41ug4zM7PoHVhFMZhjdG0Fqy8aMexIoAcHGP7y1xlcsa5As5lg04fej8b0ORMttE5z9hQ9hUPQePJynKuLvUsDjHJYiCFznVVUadKmto2TeAlU2b01K6qDXFISkSjB0r4e1PkwehXt0xxVrcgsM4lckZAiIOXA3BC7csm8URgFaPLmevWMwPEaKUPmzywD0BFEEQDTeTZ3Ho2zr9KDUj+GRYQifXxxD0T6P+YHYyaHpcMXo2/NZQS0ATk3gYHrv4Dm/t1Ihoa1q5nIYLZa8ZnA6Ew48oMp11TM05yZaSnP1JIDx46JxjIAnc5tzJCwrH8E1RcfwYoNVxPujDBwq2E3xjJvyZqGqPRYJZAQPkYlEYLsuYaIgSxFCEZ3fBzH9jyA0UFpK5QoidO5EASWUoJKF0gS8wzhAFPsUT2OGbB7j+W3Imqh2taitYmn3uidO7dJC61KIU0eCRoTx6kVa2iXcGlCk45TRskDeOSuMMzq7tH8ZHA1kgGiw6xhlJM3sDhfxdjP78LIVSOabVU8Shuzc9MF6lWJtZddBDF7hjBxTTjqyGuQJ9+UmKyyb9++T/wUUQx1APg0ARzfZMAFd9PMxRPLgBHZoGW5uOb0oIxFTZiqQMqNHNoLhA2HApPHT2B890+wZtuAniko4TGbqlQ9m9cINFlQ5tKwZhXyzFtELk3+u08/U9zRKlhngLMEUOZlAb28Mqo7ZTnfyQhYlOtKZOOCyca5za7aisQuWJiaxau7vovVGzj6hrktliyhKMtmlNRp6MSkLAZrLDk0hW/c8YL4BdpofRkL0krguNBSVuCIPHz1AhG5p/C3w48WdnbfhdCxyIhZFR3KvgQnHnsUpx7/BxJSdO8gNIs2M0m5EpiZo1ZziJ/5/lFx+cEx121eKGhHkinh9/lNCZwg1J6uwI6qmJLOojzoc2dUxsFVz3ZZtURa0eEqqYvf8LGbsOGmHZj6zyFMHHkNi5MzVPEQIV1KuXBNH6YX8yMH905UscTRGaDXRZTMNT/IiPu5PXeCtiR3j5MHBtVWyzVp+di2Y4wOmfmuDOhliibHis3b0H/ROmSz56kurZn4pSqnfuIELTKBLgBG1tE4mM5drHcItTOvERZLNFw3aCjFqI053aGpuNElmrCAhB1i45bWYXHMurmWvSvURiUDFarWepH0jSAdWoOe+qKeK6hQ4FPTCZY5OncTMcUTEfD+YUw8+weMXLLeJGKX/3xuK1AuxayFnPW9S/BQ1ullrGJKbm7WzyfG0bPxI7qI5il18WQ1roJRdfv0XN4/2LndWxqgbVKtVbQVtEZXEu9QYvapg5UEKs937le0f4Svatz8eDbXhMN7BsB6qDTM+sjSlB4oTTHRp8dz6htZZYChO4DK7xypmBQuafNnePtnSHlur9W0MbJUPAt7zQkqbOcuI0vC6kOYdXzVI4LSmGuHaa3alOkqJLkzL8wWiKp0kh7qIXvRHUC9QxQzn40NKtUZWgC5OcpVLdEwT0oyakCkicvSPodtqZyryjDWKYLxHjtP/aW2iUuTTpT1eSrRFUCXzzzgCESpn2MhbjgPg2Vwb3OqOgFLKB6AQ8MiBSCQjn2O9KUg13rXvTRMsc/TZbIclmx4GVrLywDCoZahJnUVSrs0yF13D10Ye5d0MW4BsTgWdeskvDfogl2lEmU5/cy07Pb/F0AhWam389/SRmTsZu7bNrqeGVmwlI1BHa/ulQpPIj1E4eDWs2AQ5VTmcq99Lt3v0kW58oVoJ9u6EKPAVnuYpjB2BbTABfsvMsIdtU6mZjaxqu2lOlQ/IWZklH/bXKytJoogE1veRTuQDI8C3bgdS3sw//oL9ApiUucj5sa1CsLi33FBjsiVSd7eAfRv3EHE2fDjJQvTS6DjuGWOpjiWNR+W2pMx28j2GXSBKLmYOYnBizeZOILbUGS2WoG2jpnqrMF9xeJbchuPokkdKpVjCiDzpa0DZSofGfWazHlJVBaqIegKoOP2qNWRtVms3HYL7cfOadewe9N2uNO0KgiKcs/owyuWhdO7hDV+my/EO6yVE59TXQ/pc6n3ZGlaya4AyiCwR6zjnl5ypKModw5u34ChtD3v78s2AOloLkQuziw/MZ3EHclIRDvg0Q6CVilnYFjegh141iVg9ykMaL0PUqDMsKxlGRauSRmJ4NiP+bRgdBFkZHE34gsGVo5lt4ZRTqc60B+daIh590IUixEjll2PR0TgCoBoDCvrmsWdh3s5I1mwmEsPwrqllyWxaUYYNYm8gS4BIriWQGnjNk4PpbGuAknC9qFn4paXpLHLSmsdFb8x06pr8c66A+piUeETRY7uAVrNOlcrxZX7yYLXICR25nOiWyOa50oyP7dlPQ8GETjAv76TwiqF3jhV691aMAngEO2g+eY2ynXelWysxJ17vF3PQi4M1mVRfuNlt9ZMjLAWTyPQpCTyTplnc+gOoKPRyMXifRX/IJTy0gXgnMClPZlAFC5x+3Pvku4Rbv81CdfVb6ZyoMArb84cRzcApXkFGx7MRHQPPj/pwxXSnu3cbgCLCClK4O1KMlsBGc6J3jG6V96JAxjeXKmW6dz09L+wzNGpHGeuUokTK1rB+estWo9JxMWab3pDyeXJyb52Y8zu2HELDBFIZ03VdunPPJ4/fPYldAfQ+BZzbmYB+O7cbw7F5GMP1zNK1rqmByb93NAZhJSaGjdUIDkPhKOvJSEfz52Wv98/dQrdAGQxe7kdMMAXuU4in4jhJIQBoGPWApKBfd1umn0VGhnexB9DEsA4NtVWS4PL0utq0azLN/cf/DvexsGXvi4jNrTniFNAdETNbrmIarnemmZ8Ccas1VIL2FpSf5yLUhdTGZI8e5X98LfPf/FCIToCaZWV81Jy5pGlSmWTdVXEcWiuy7h68fku2hbUm8HBuqHaYQGQjVutGOpFWd+wzN96Cqefemz3r/dVx4Dla9G2LMr5Yo0ElEzqHV+UKd7lL0TMZ905AsrKtVmIZUesrutw4Jw7+kRvr6sGmzaeKOmJ4o09/OyLf350/VcO3om3YT2Npc019u8nH/+mXLmKaQT6lRk3rqL/KcDGQ2K+uXulxpNABCXBLb1r91NjUhO7ai29XR9cUv1WjbVuqNVGb6VXsmZVysmDkEd/1Xzsgd98dv2dB28DOr4RuhBMpxtnn/j6rvdt33Y3qjLKZ9ZyPHQGfj/TWaj1/WH8jwpu39M3rkkL45oXoaCeUy6Oy9r42Ox/Dx/d98cnT9yz64n559Dm3yW7Bagl+h59Jj6xZutilV4JVXiRmJeqrCc1mT9pQqpdFb3XnHKR8Lo+r4g+v25G19xvc532VgUv1P8zybQhWC5LXtSYKRZnGwu1Pa9hvkXOt2Wx9473jnfZ8T8tsQR1maWQOAAAAABJRU5ErkJggg=="
+                alt=""
+                class="position-absolute"
+                style="top: -12px; right: 8px"
+              />
+            </div>
+            <ul class="list-group list-group-flush shadow">
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                新增餵食記錄
+              </li>
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                新增體重紀錄
+              </li>
+              <li class="list-group-item fs-little fw-bold text-primary">
+                建立提醒任務
+              </li>
+            </ul>
+          </div>
+          <div
+            class="card border-0 position-absolute"
+            style="width: 200px; left: 260px"
+          >
+            <div
+              class="card-header position-relative bg-secondary-dark py-4 ps-4"
+            >
+              <p class="fs-little fw-bold text-white mb-0">其他可以做的事</p>
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+                class="position-absolute"
+                style="top: -12px; right: 8px"
+              />
+            </div>
+            <ul class="list-group list-group-flush shadow">
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                留下觀察筆記
+              </li>
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                查看今日健康分析
+              </li>
+              <li class="list-group-item fs-little fw-bold text-primary">
+                標記已完成的提醒
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 新增餵食記錄 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgBxZbBUcJAFIb/t2F01AscdAZPsQNSAXYAJcQKhAoIFSgVgB1AB9iAoQNyEh0uOXnASda3AQeDm0wcd4fvwvCykz/vvd3/LaEEuQzr6Tl6RGhDwpWAmz0gxJRiIQWmmwSzs6YX4Q+QVmwVutLBWErcotpbJiw+rCouDgPJW9hLHYSVBbOvhH8iECavYa/K8lymyXsY8M8A/yHF0Gl6AaqIqgz53wNMkKDvXHuPKBNVPVQl5TLVYYZ4k8Ir6nHWUxYcGBRU1E8J46KHlGUpsIQFxAcadOPFv+KcZQeW4DN+r4sLbmoXlqCCYyfYZVqwhKSdgx2KGt5Ah7jQih4B1dMI9oh1QcH2EMES7N8LXVxws+ewBFdxqosLUcMIlthIzHRxQQ0vJjvZLkq9lxLcqdsAzNJSNw8Uiqov4jkIw6QX+tmcH+LrcMDiAQzCG9WvXXlPP2M5c3AuvSE7VN9kqdl/J8kqu5HsY7qFu3GnSuOjAnwe5yTYTmWpj0ecdfCZ4JlKX7a9UXR4KHRJDYa9T0csFKldzzNz9D0z5fqlnabkYztEWjlBtZ53tHDkFMfgC7oXnimKf7r4AAAAAElFTkSuQmCC"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            新增餵食記錄
+          </p>
+        </div>
+      </div>
+      <!-- bot reply 餵了多少 -->
+      <div class="position-relative d-flex mb-5">
+        <img
+          src="/web-layout-training-vite/assets/head%201-DV7jljMa.png"
+          alt="Furby"
+          class="position-absolute z-1"
+          style="top: -4px; left: 0"
+        />
+        <div class="small-circle bg-secondary rounded-circle z-0"></div>
+        <div
+          class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+          style="max-width: 214px"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBzZbPTcMwFMa/51QcgEOjqkA5pRMAE8AGsAFlAsoENBMAE5QRygZlAroBPRH+VYkQ4lBiP/wqkChyIAhH4ndJ4jj+8uzn75nwS9L0um7yxS6BtkEcMSOSdiLKwGZESg2g9EUYtsZFYxBKkqZJxHnQZ/BOqQ+IzlWgY5e4KvP95P62yzq4Ki0oMHdMrq4mtzfdr69+jHTycNezl2P8BWPixmqrV0pUIrTTdAIfaH3UWFs//VZ0toYypcx1+CFTNbMla1y4pkYHxx4FhTrn1JcbZ6QSpU2Ca1SAqr2EzkiNCXZREXaPHzpFyWAPFUF22zlFGdhERTBTVJBIXhNoHkJUypF84xYljFEdmTuRmMaoCOvfI3ciKRqiIogxKDCH1NbMaYoKmOam7Yw0DMPMFukRfMM4b7UKvHdm9mDPe5WyqTax3Llt0Jo9fMOmJ1E6RR/vk45Uffil11hZO/t4mBOVok2k+vCGHNa422iuxnOtcrqDWdpna/LfnYHsu+Fs/xI6KIH0f8354GNKP1MDljeM1hGTsuPZP/vsu+JMhgeKgkHYbF5KU5Ik8cJCsCs/SbPC8N7f9rVFf2zHGD49v5y12+0M/4k3ZXjJZFclh64AAAAASUVORK5CYII="
+            alt=""
+            class="position-absolute z-0"
+            style="left: -4px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            好的！請問今天餵了多少飼料呢？（單位：g / 克）
+          </p>
+        </div>
+        <div class="ms-2 pt-forty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+      </div>
+      <!-- 回覆餵了多少 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG0SURBVHgBxZbBUcJAFIb/t2F01AscdAZPsQNSAXYAJcQKhAoIFSgVgB1AB9iAoQNyEh0uOXnASda3AQeDm0wcd4fvwvCykz/vvd3/LaEEuQzr6Tl6RGhDwpWAmz0gxJRiIQWmmwSzs6YX4Q+QVmwVutLBWErcotpbJiw+rCouDgPJW9hLHYSVBbOvhH8iECavYa/K8lymyXsY8M8A/yHF0Gl6AaqIqgz53wNMkKDvXHuPKBNVPVQl5TLVYYZ4k8Ir6nHWUxYcGBRU1E8J46KHlGUpsIQFxAcadOPFv+KcZQeW4DN+r4sLbmoXlqCCYyfYZVqwhKSdgx2KGt5Ah7jQih4B1dMI9oh1QcH2EMES7N8LXVxws+ewBFdxqosLUcMIlthIzHRxQQ0vJjvZLkq9lxLcqdsAzNJSNw8Uiqov4jkIw6QX+tmcH+LrcMDiAQzCG9WvXXlPP2M5c3AuvSE7VN9kqdl/J8kqu5HsY7qFu3GnSuOjAnwe5yTYTmWpj0ecdfCZ4JlKX7a9UXR4KHRJDYa9T0csFKldzzNz9D0z5fqlnabkYztEWjlBtZ53tHDkFMfgC7oXnimKf7r4AAAAAElFTkSuQmCC"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            50
+          </p>
+        </div>
+      </div>
+      <!-- bot reply 已新增 -->
+      <div class="mb-forty">
+        <!-- bot reply -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="/web-layout-training-vite/assets/head%201-DV7jljMa.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHLSURBVHgBzZbPTcMwFMa/51QcgEOjqkA5pRMAE8AGsAFlAsoENBMAE5QRygZlAroBPRH+VYkQ4lBiP/wqkChyIAhH4ndJ4jj+8uzn75nwS9L0um7yxS6BtkEcMSOSdiLKwGZESg2g9EUYtsZFYxBKkqZJxHnQZ/BOqQ+IzlWgY5e4KvP95P62yzq4Ki0oMHdMrq4mtzfdr69+jHTycNezl2P8BWPixmqrV0pUIrTTdAIfaH3UWFs//VZ0toYypcx1+CFTNbMla1y4pkYHxx4FhTrn1JcbZ6QSpU2Ca1SAqr2EzkiNCXZREXaPHzpFyWAPFUF22zlFGdhERTBTVJBIXhNoHkJUypF84xYljFEdmTuRmMaoCOvfI3ciKRqiIogxKDCH1NbMaYoKmOam7Yw0DMPMFukRfMM4b7UKvHdm9mDPe5WyqTax3Llt0Jo9fMOmJ1E6RR/vk45Uffil11hZO/t4mBOVok2k+vCGHNa422iuxnOtcrqDWdpna/LfnYHsu+Fs/xI6KIH0f8354GNKP1MDljeM1hGTsuPZP/vsu+JMhgeKgkHYbF5KU5Ik8cJCsCs/SbPC8N7f9rVFf2zHGD49v5y12+0M/4k3ZXjJZFclh64AAAAASUVORK5CYII="
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              已新增餵食紀錄
+            </p>
+          </div>
+          <div class="ms-2 pt-twenty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 資訊框 -->
+        <div class="card ms-6 border-orange-400 shadow" style="width: 200px">
+          <div class="card-body py-2">
+            <p class="card-text fs-little text-neutral-900">
+              時間：07/19 五 8:00<br />預設食物：皇家減重飼料<br />餵食量：50g
+            </p>
+          </div>
+          <div class="d-flex">
+            <div
+              class="w-50 text-center py-2 border-top border-end border-orange-400"
+            >
+              <a
+                href="#"
+                class="link-primary text-decoration-none fw-bold fs-little"
+                >修改</a
+              >
+            </div>
+            <div class="w-50 text-center py-2 border-top border-orange-400">
+              <a
+                href="#"
+                class="link-primary text-decoration-none fw-bold fs-little"
+                >前往查看</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 傳訊欄位 -->
+    <div
+      class="container-fluid d-flex py-2 px-5 border-top border-neutral-transparent-5 bg-white position-fixed bottom-0 z-10"
+      style="--bs-border-opacity: 0.05"
+    >
+      <div
+        class="rounded-circle bg-neutral-transparent-5 p-ten me-2"
+        style="width: 44px; height: 44px; --bs-bg-opacity: 0.05"
+      >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJGSURBVHgB3VVRbtNAEJ1dGwQSEuYEDSdoOAHuN45wDF+ItEYcAPcETU6QcACUNKkiPlCyQFr4Iz0B6QlqTtCI8kNizzDetBUhjl0l/MCT1rvrnZ3ZnZk3C/CvQ+QJVLySL4A20tYQ45MD9UnBqgZ81y2gjE6zZCSa91tKhcvWzazNJOM9IAonFG+9VZ/DP4xbKOPTWERNnm4t0zF3A/+J4xKJxxcrFhG5gOS31eF+2uaK9ygQIOpCgAISY30oFMO2+rC/YGC77DR49oqHLEgzYRJhpz9YejptpOx8EYIKF+os/iSt1u4NqlcGLn2NCNUDNajBGuCkqHNSBBHig646GukYxHJiC5CAgO+XbfSfOjaS3GQfWFLCcevdYJgmZ6Dxmg8bmIbY5OloLsi35a2zBcUcTDKiPt/O5sTU/3gMO16pJfB8t6WGY8iAhBxwJtWJwE7c9x1/3EsaAe1y82N5p5m3PzNNdWwg8lNi09j2nLscwOpLz9t40+t9g1VuEBlRMenTYsME06k4FT/tLB25LpoJSWvhpxkVko5Qhtl7M2DG5pAzeSyk5sccmFCaMwadn2TqyFrkGjNmttYStjIRv0oZ15ixFgm5wyzXgW+vm0Wd3mGDAF+AIAvJ6CPIJmdVkZUH1yGlCddAp3fUSi70zHWLIOVZNyNrVjJwia5So1yhG1yLYu5xVs+0iwy8qR+NCKdBwlxYEbqER9MgGU8IdfCvqulz19njGlOFv4DfiTn3HlTKpYdcem1YA1zih53+x2P4b/ALfsYJL8j3Z5EAAAAASUVORK5CYII=" alt="" />
+      </div>
+      <input
+        type="email"
+        class="form-control bg-neutral-transparent-5 border-0 rounded-pill"
+        id="chatInput"
+        placeholder="需要為你做什麼呢？"
+        style="--bs-bg-opacity: 0.05; height: 44px; width: 190px"
+      />
+      <div class="p-six my-1 me-2 btn">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIZSURBVHgB7VVNbtNQEJ55trNCopwAcwLCCWp2LCzVoSxY8JPeoJwg9ATtBVDc0AUbkofUAruYE7Q9AeEGUX82YM8w88CQVEleA0JCVT/pyS8vM983M34zBvjHwMsath+lCROuOScsP+VvP9jL+HkF2lkWc1B2mSGZ+oP5yPD5/dwW40X+BjxgU3UcOfNIwtl0C3SPzQpvDHz+6IueTPlZ91+pvPPGfhzp/nH2IG6Y6FCEViJoxK/6/S/wRxmEZeyyYChqcoXuEfnICfO3eBGFt0R/i2sBL8LJH0+yNAsMd5CiVm7tqD5HuS0+op/9sl1V1e6e/d2EUxkEBlcZsElB6ToWylBuCo71zot4MkHWrBsv4NNjfVJAa3ImAZrVSc4pAYLKGTNBpk/JQrqUd5yhgeHz9XQgayi9cejsCV7WnYxAzoeZi7kCATWsRowISR1xr7+/pUQ/nCGrI2finT27v+UyWk+zutt7g/fv5gpMRYzY1brqXom0k4ExA+T2CZ3dem0PXtS1J8ZtlxFjDhcwc1Q8baVDzUIIR8S8IQLFLDudsETYlaBiHX69wcG9izbhLMeAwxZBOZRomwZd7QsGYw3SMXC1QhDd1ppL6RIhd6PklM9bs7gWDjt5Dx1juC1m8RyTsYj8ehdLCyh0ckbGJGJ6FwE39Uyucq7D7qQ627We78FSePYwZV3L+FyxWeQDA20wmZvwP+E7UKoCz7XI4VwAAAAASUVORK5CYII=" alt="" />
+      </div>
+      <div
+        class="rounded-circle bg-primary text-center pt-1 my-1"
+        style="width: 36px; height: 36px"
+      >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOCAYAAAAbvf3sAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABfSURBVHgB3ZCxDYAwEAMNYpDsv1TYgoo3KQiyHgeJNpa+eftcGEgiWRhRGWclj4IvSZj3jSETHkMpLJD8OvQKN+MBjAfX0gFXCLeIAnk5P0ACVCt+agZg8+9lb1tZ5wIret+WxyyxUwAAAABJRU5ErkJggg==" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
