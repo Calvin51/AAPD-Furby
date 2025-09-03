@@ -1,3 +1,77 @@
-.index-title {
-  font-size: 100px;
+.hero-gradient {
+  background: linear-gradient(180deg, $orange-350 0%, $orange-100 50%, $green-500 100%);
+}
+
+.cloud-tw {
+  position: absolute;
+  top: 32px;
+  left: -10px;
+}
+
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $primary;
+    border-radius: 999px;
+  }
+}
+
+.dog-avatar-32 {
+  padding: 1px;
+  width: 32px;
+  height: 32px;
+  object-fit: cover
+}
+
+.dog-avatar-84 {
+  background-color: $white;
+  padding: 2px;
+  width: 84px;
+  height: 84px;
+  object-fit: cover
+}
+
+.cat-avatar-32 {
+  width: 32px;
+  height: 32px;
+  object-fit: cover
+}
+
+.pet-avatar {
+  position: absolute;
+  top: -25px;
+}
+
+.bubble {
+  background-color: $green-700;
+}
+
+.bubble-left {
+  position: absolute;
+  left: 47.5px;
+  bottom: -8px;
+}
+
+.health-bg {
+  background-color: $orange-100;
+
+}
+
+.border-orange {
+  border: 1px solid $orange-350;
+}
+
+.fs-color-700 {
+  color: $neutral-700;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
 }
