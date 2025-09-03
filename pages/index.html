@@ -6,49 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <section class="hero-gradient pb-90">
+      <div class="container">
+        <div
+          class="position-relative d-flex justify-content-between align-items-center px-3"
+        >
+          <div class="position-absolute top-0 start-50">
+            <img src="../assets/images/cloud-1.svg" alt="cloud-1" />
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div>
+            <img src="../assets/images/furby-bot.svg" alt="furby-bot" />
+          </div>
+          <div class="pe-3 position-relative">
+            <img
+              class="cloud-tw"
+              src="../assets/images/cloud-2.svg"
+              alt="cloud-2"
+            />
+            <img class="mb-2" src="../assets/images/sun.svg" alt="sun" />
+            <h2 class="fs-2 fw-bold mb-1 text-black">早安，Simon</h2>
+            <p class="m-0 text-black">隨時回來追踨毛孩的狀態～</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="line">
+              <p class="ps-3 mb-2">2025 年 7 月 26 日 星期六</p>
+            </div>
+            <div class="d-flex align-items-center py-1 mb-1">
+              <div class="position-relative">
+                <img
+                  src="../assets/images/dog.svg"
+                  class="rounded-circle border border-2 border-primary dog-avatar-32"
+                  alt="頭像"
+                />
+                <span
+                  class="position-absolute top-0 start-100 translate-middle p-1 bg-primary rounded-circle"
+                >
+                </span>
+              </div>
+              <div class="ps-2">
+                <p class="mb-0 fs-little">10:00・森森動物醫院回診</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-1">
+              <div class="position-relative">
+                <img
+                  src="../assets/images/cat.svg"
+                  class="rounded-circle border border-2 border-success cat-avatar-32"
+                  alt="頭像"
+                />
+              </div>
+              <div class="ps-2">
+                <p class="mb-0 fs-little">18:00・吃藥</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第二區塊 -->
+        <div class="row justify-content-center position-relative">
+          <div class="pet-avatar text-center">
+            <div class="position-relative">
+              <img
+                src="../assets/images/dog.svg"
+                class="rounded-circle border border-3 border-primary dog-avatar-84"
+                alt="頭像"
+              />
+            </div>
+          </div>
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="d-flex justify-content-between mb-4">
+              <div>
+                <p class="mb-1 fs-5 fw-bold text-black">Mica</p>
+                <p class="mb-0 fs-little fw-bold fs-color-700">
+                  15 歲 1 個月 3 天
+                </p>
+              </div>
+              <div>
+                <img
+                  class="mb-1"
+                  src="../assets/images/mood-icon.svg"
+                  alt="mood-icon"
+                />
+                <p class="mb-0 fw-bold fs-color-700">開心</p>
+              </div>
+            </div>
+            <div
+              class="position-relative d-flex justify-content-between align-items-center mb-4"
+            >
+              <div>
+                <img
+                  src="../assets/images/furbyBot-ava.svg"
+                  alt="furbyBot-ava"
+                />
+              </div>
+              <div class="p-2 bubble text-white rounded-5 px-3 py2">
+                <p class="fs-little mb-0">
+                  Mica今天心情不錯,要注意不要餵<br />食過量喔！
+                </p>
+              </div>
+              <div class="bubble-left">
+                <img src="../assets/images/氣泡.svg" alt="氣泡" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="../assets/images/weight.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">體重</p>
+                <p class="mb-0 fw-semibold fs-color-700">8.4公斤</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="../assets/images/餵食量.svg"
+                  alt="餵食量"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">餵食量</p>
+                <p class="mb-0 fw-semibold fs-color-700">190 卡</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="../assets/images/運動量.svg"
+                  alt="運動量"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">運動量</p>
+                <p class="mb-0 fw-semibold fs-color-700">3,200 步</p>
+              </div>
+            </div>
+            <div>
+              <p class="fs-small mb-0">
+                最近更新 7/14 12:00:50 資料為參考用，非診斷依據
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center position-relative">
+          <div class="pet-avatar text-center">
+            <div class="position-relative">
+              <img
+                src="../assets/images/cat.svg"
+                class="rounded-circle border border-3 border-success dog-avatar-84"
+                alt="頭像"
+              />
+            </div>
+          </div>
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="d-flex justify-content-between mb-4">
+              <div>
+                <p class="mb-1 fs-5 fw-bold text-black">來福</p>
+                <p class="mb-0 fs-little fw-bold fs-color-700">7 歲</p>
+              </div>
+              <div>
+                <img
+                  class="mb-1"
+                  src="../assets/images/tired-icon.svg"
+                  alt="mood-icon"
+                />
+                <p class="mb-0 fw-bold fs-color-700">疲倦</p>
+              </div>
+            </div>
+            <div
+              class="position-relative d-flex justify-content-between align-items-center mb-4"
+            >
+              <div>
+                <img
+                  src="../assets/images/furbyBot-ava.svg"
+                  alt="furbyBot-ava"
+                />
+              </div>
+              <div class="p-2 bubble text-white rounded-5 px-3 py2">
+                <p class="fs-little mb-0">
+                  Mica今天心情不錯,要注意不要餵<br />食過量喔！
+                </p>
+              </div>
+              <div class="bubble-left">
+                <img src="../assets/images/氣泡.svg" alt="氣泡" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="../assets/images/heart.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">心跳</p>
+                <p class="mb-0 fw-semibold fs-color-700">80 次/分</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="../assets/images/breathe.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">呼吸</p>
+                <p class="mb-0 fw-semibold fs-color-700">40 次/分</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4"
+                  src="../assets/images/sport.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">運動量</p>
+                <p class="mb-0 fw-semibold fs-color-700">3,200 步</p>
+              </div>
+            </div>
+            <div>
+              <p class="fs-small mb-0">
+                最近更新 7/14 12:00:50 資料為參考用，非診斷依據
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
 
