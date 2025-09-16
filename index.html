@@ -5,55 +5,322 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/AAPD-Furby/assets/main-UciKZ2-g.js"></script>
-    <link rel="stylesheet" crossorigin href="/AAPD-Furby/assets/main-BFf7ynq9.css">
+    <script type="module" crossorigin src="/AAPD-Furby/assets/main-i25S8R5t.js"></script>
+    <link rel="stylesheet" crossorigin href="/AAPD-Furby/assets/main-Cq_6TAZ2.css">
   </head>
+
   <body>
-    <h1 class="header">header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/AAPD-Furby/assets/dog-C9XCfHyE.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <header>
+  <section class="header-bg">
+    <div class="header-bg container fixed-top z-3 pb-1">
+      <div class="row align-items-center justify-content-between px-2 pt-3">
+        <div class="col-auto ps-5">
+          <time class="fw-bold ps-2" datetime="09:41">9:41</time>
+        </div>
+        <div class="col-auto d-flex gap-2 me-3">
+          <img
+            class="status-icon"
+            src="data:image/svg+xml,%3csvg%20width='20'%20height='14'%20viewBox='0%200%2020%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19.6152%202.03295C19.6152%201.3999%2019.1376%200.886719%2018.5485%200.886719H17.4818C16.8927%200.886719%2016.4152%201.3999%2016.4152%202.03295V11.9669C16.4152%2012.5999%2016.8927%2013.1131%2017.4818%2013.1131H18.5485C19.1376%2013.1131%2019.6152%2012.5999%2019.6152%2011.9669V2.03295ZM12.181%203.332H13.2477C13.8368%203.332%2014.3144%203.8575%2014.3144%204.50574V11.9394C14.3144%2012.5876%2013.8368%2013.1131%2013.2477%2013.1131H12.181C11.5919%2013.1131%2011.1144%2012.5876%2011.1144%2011.9394V4.50574C11.1144%203.8575%2011.5919%203.332%2012.181%203.332ZM7.84928%205.98105H6.78261C6.19351%205.98105%205.71594%206.51324%205.71594%207.16973V11.9244C5.71594%2012.5809%206.19351%2013.1131%206.78261%2013.1131H7.84928C8.43838%2013.1131%208.91594%2012.5809%208.91594%2011.9244V7.16973C8.91594%206.51324%208.43838%205.98105%207.84928%205.98105ZM2.54849%208.42634H1.48183C0.892724%208.42634%200.415161%208.95093%200.415161%209.59804V11.9414C0.415161%2012.5885%200.892724%2013.1131%201.48183%2013.1131H2.54849C3.1376%2013.1131%203.61516%2012.5885%203.61516%2011.9414V9.59804C3.61516%208.95093%203.1376%208.42634%202.54849%208.42634Z'%20fill='black'/%3e%3c/svg%3e"
+            alt="Cellular"
+          />
+          <img
+            class="status-icon"
+            src="data:image/svg+xml,%3csvg%20width='18'%20height='14'%20viewBox='0%200%2018%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.18641%203.30222C11.6735%203.30232%2014.0655%204.22441%2015.868%205.87789C16.0038%206.00554%2016.2207%206.00393%2016.3544%205.87428L17.6519%204.61081C17.7196%204.54505%2017.7573%204.45597%2017.7568%204.36329C17.7562%204.27061%2017.7174%204.18197%2017.6489%204.11697C12.9179%20-0.257741%205.45418%20-0.257741%200.723168%204.11697C0.654636%204.18192%200.615752%204.27054%200.61512%204.36322C0.614488%204.4559%200.652161%204.545%200.719801%204.61081L2.01767%205.87428C2.15126%206.00413%202.36839%206.00574%202.50404%205.87789C4.30678%204.2243%206.69906%203.30221%209.18641%203.30222ZM9.18306%207.5225C10.5404%207.52241%2011.8493%208.03415%2012.8554%208.95828C12.9915%209.08943%2013.2058%209.08659%2013.3385%208.95187L14.6258%207.63256C14.6936%207.56336%2014.7312%207.46948%2014.7302%207.37193C14.7292%207.27438%2014.6897%207.1813%2014.6206%207.11351C11.5567%204.22266%206.81199%204.22266%203.74816%207.11351C3.67895%207.1813%203.63947%207.27443%203.63856%207.37201C3.63765%207.46959%203.6754%207.56346%203.74333%207.63256L5.03024%208.95187C5.16289%209.08659%205.37726%209.08943%205.51334%208.95828C6.51879%208.03476%207.82664%207.52307%209.18306%207.5225ZM11.7075%2010.316C11.7094%2010.4214%2011.6723%2010.523%2011.605%2010.5968L9.42838%2013.0515C9.36458%2013.1236%209.27758%2013.1642%209.18681%2013.1642C9.09604%2013.1642%209.00905%2013.1236%208.94524%2013.0515L6.76822%2010.5968C6.70096%2010.5229%206.66397%2010.4213%206.66596%2010.316C6.66796%2010.2106%206.70877%2010.1108%206.77875%2010.0402C8.16885%208.72634%2010.2048%208.72634%2011.5949%2010.0402C11.6648%2010.1109%2011.7056%2010.2107%2011.7075%2010.316Z'%20fill='black'/%3e%3c/svg%3e"
+            alt="Wi-Fi"
+          />
+          <img
+            class="status-icon"
+            src="data:image/svg+xml,%3csvg%20width='29'%20height='14'%20viewBox='0%200%2029%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20opacity='0.35'%20x='1.25684'%20y='1'%20width='24'%20height='12'%20rx='3.8'%20stroke='black'/%3e%3cpath%20opacity='0.4'%20d='M26.7568%205.28125V9.35672C27.5616%209.01155%2028.0849%208.20859%2028.0849%207.31899C28.0849%206.42938%2027.5616%205.62642%2026.7568%205.28125'%20fill='black'/%3e%3crect%20x='2.75684'%20y='2.5'%20width='21'%20height='9'%20rx='2.5'%20fill='black'/%3e%3c/svg%3e"
+            alt="Battery"
+          />
         </div>
       </div>
     </div>
+  </section>
+</header>
+    <section class="hero-gradient pb-90">
+      <div class="container">
+        <div
+          class="position-relative d-flex justify-content-between align-items-center px-3"
+        >
+          <div class="position-absolute top-0 start-50">
+            <img src="/AAPD-Furby/assets/cloud-1-BR2EQk5G.svg" alt="cloud-1" />
+          </div>
+          <div>
+            <img src="/AAPD-Furby/assets/furby-bot-gGUFaxgg.svg" alt="furby-bot" />
+          </div>
+          <div class="pe-3 position-relative">
+            <img
+              class="cloud-tw"
+              src="/AAPD-Furby/assets/cloud-2-CMCJNsAO.svg"
+              alt="cloud-2"
+            />
+            <img class="mb-2" src="/AAPD-Furby/assets/sun-BzBoKQjN.svg" alt="sun" />
+            <h2 class="fs-2 fw-bold mb-1 text-black">早安，Simon</h2>
+            <p class="m-0 text-black">隨時回來追踨毛孩的狀態～</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="line">
+              <p class="ps-3 mb-2">2025 年 7 月 26 日 星期六</p>
+            </div>
+            <div class="d-flex align-items-center py-1 mb-1">
+              <div class="position-relative">
+                <img
+                  src="/AAPD-Furby/assets/dog-CfYHLGOL.svg"
+                  class="rounded-circle border border-2 border-primary dog-avatar-32"
+                  alt="頭像"
+                />
+                <span
+                  class="position-absolute top-0 start-100 translate-middle p-1 bg-primary rounded-circle"
+                >
+                </span>
+              </div>
+              <div class="ps-2">
+                <p class="mb-0 fs-little">10:00・森森動物醫院回診</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-1">
+              <div class="position-relative">
+                <img
+                  src="/AAPD-Furby/assets/cat-D6aMCgUz.svg"
+                  class="rounded-circle border border-2 border-success cat-avatar-32"
+                  alt="頭像"
+                />
+              </div>
+              <div class="ps-2">
+                <p class="mb-0 fs-little">18:00・吃藥</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第二區塊 -->
+        <div class="row justify-content-center position-relative">
+          <div class="pet-avatar text-center">
+            <div class="position-relative">
+              <img
+                src="/AAPD-Furby/assets/dog-CfYHLGOL.svg"
+                class="rounded-circle border border-3 border-primary dog-avatar-84"
+                alt="頭像"
+              />
+            </div>
+          </div>
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="d-flex justify-content-between mb-4">
+              <div>
+                <p class="mb-1 fs-5 fw-bold text-black">Mica</p>
+                <p class="mb-0 fs-little fw-bold fs-color-700">
+                  15 歲 1 個月 3 天
+                </p>
+              </div>
+              <div>
+                <img
+                  class="mb-1"
+                  src="/AAPD-Furby/assets/mood-icon-DhIiTNGO.svg"
+                  alt="mood-icon"
+                />
+                <p class="mb-0 fw-bold fs-color-700">開心</p>
+              </div>
+            </div>
+            <div
+              class="position-relative d-flex justify-content-between align-items-center mb-4"
+            >
+              <div>
+                <img
+                  src="/AAPD-Furby/assets/furbyBot-ava-CmOW2XiQ.svg"
+                  alt="furbyBot-ava"
+                />
+              </div>
+              <div class="p-2 bubble text-white rounded-5 px-3 py2">
+                <p class="fs-little mb-0">
+                  Mica今天心情不錯,要注意不要餵<br />食過量喔！
+                </p>
+              </div>
+              <div class="bubble-left">
+                <img src="data:image/svg+xml,%3csvg%20width='12'%20height='9'%20viewBox='0%200%2012%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.820312%207.5791C6.13621%206.43645%206.87684%202.81066%207%200.500245C7.5%202.50024%209%204.50024%2012%206.50024C6.5%209.50024%203.11784%208.61924%200.820312%207.5791Z'%20fill='%23538E7C'/%3e%3c/svg%3e" alt="氣泡" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="/AAPD-Furby/assets/weight-Zr2HRLKD.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">體重</p>
+                <p class="mb-0 fw-semibold fs-color-700">8.4公斤</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="/AAPD-Furby/assets/%E9%A4%B5%E9%A3%9F%E9%87%8F-Exi1roQy.svg"
+                  alt="餵食量"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">餵食量</p>
+                <p class="mb-0 fw-semibold fs-color-700">190 卡</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="/AAPD-Furby/assets/%E9%81%8B%E5%8B%95%E9%87%8F-D2wLJ8g9.svg"
+                  alt="運動量"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">運動量</p>
+                <p class="mb-0 fw-semibold fs-color-700">3,200 步</p>
+              </div>
+            </div>
+            <div>
+              <p class="fs-small mb-0">
+                最近更新 7/14 12:00:50 資料為參考用，非診斷依據
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center position-relative">
+          <div class="pet-avatar text-center">
+            <div class="position-relative">
+              <img
+                src="/AAPD-Furby/assets/cat-D6aMCgUz.svg"
+                class="rounded-circle border border-3 border-success dog-avatar-84"
+                alt="頭像"
+              />
+            </div>
+          </div>
+          <div class="col-10 bg-white p-4 rounded-4 mb-thirtytwo shadow">
+            <div class="d-flex justify-content-between mb-4">
+              <div>
+                <p class="mb-1 fs-5 fw-bold text-black">來福</p>
+                <p class="mb-0 fs-little fw-bold fs-color-700">7 歲</p>
+              </div>
+              <div>
+                <img
+                  class="mb-1"
+                  src="/AAPD-Furby/assets/tired-icon-9q5u7vH2.svg"
+                  alt="mood-icon"
+                />
+                <p class="mb-0 fw-bold fs-color-700">疲倦</p>
+              </div>
+            </div>
+            <div
+              class="position-relative d-flex justify-content-between align-items-center mb-4"
+            >
+              <div>
+                <img
+                  src="/AAPD-Furby/assets/furbyBot-ava-CmOW2XiQ.svg"
+                  alt="furbyBot-ava"
+                />
+              </div>
+              <div class="p-2 bubble text-white rounded-5 px-3 py2">
+                <p class="fs-little mb-0">
+                  Mica今天心情不錯,要注意不要餵<br />食過量喔！
+                </p>
+              </div>
+              <div class="bubble-left">
+                <img src="data:image/svg+xml,%3csvg%20width='12'%20height='9'%20viewBox='0%200%2012%209'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.820312%207.5791C6.13621%206.43645%206.87684%202.81066%207%200.500245C7.5%202.50024%209%204.50024%2012%206.50024C6.5%209.50024%203.11784%208.61924%200.820312%207.5791Z'%20fill='%23538E7C'/%3e%3c/svg%3e" alt="氣泡" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="/AAPD-Furby/assets/heart-DcjD3Ci_.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">心跳</p>
+                <p class="mb-0 fw-semibold fs-color-700">80 次/分</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4 mb-1"
+                  src="/AAPD-Furby/assets/breathe-5Kaff16_.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">呼吸</p>
+                <p class="mb-0 fw-semibold fs-color-700">40 次/分</p>
+              </div>
+              <div class="text-center border-orange rounded-4 health-bg p-2">
+                <img
+                  class="mx-4"
+                  src="/AAPD-Furby/assets/sport-DDMIAtGM.svg"
+                  alt="weight"
+                />
+                <p class="mb-0 fw-semibold fs-color-700">運動量</p>
+                <p class="mb-0 fw-semibold fs-color-700">3,200 步</p>
+              </div>
+            </div>
+            <div>
+              <p class="fs-small mb-0">
+                最近更新 7/14 12:00:50 資料為參考用，非診斷依據
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="footer">footer</footer>
+    <footer>
+  <section class="bg-footer fixed-bottom z-3 rounded-top-4">
+    <div class="container position-relative">
+      <div class="firby-ava-m">
+        <div class="position-relative">
+          <img
+            src="/AAPD-Furby/assets/furbyBot-ava-main-DKaYeVbl.svg"
+            class="rounded-circle border border-1 border-white dog-avatar-84"
+            alt="頭像"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-between mx-2">
+        <div class="col-5">
+          <div class="d-flex justify-content-center mt-2">
+            <div class="text-center pt-2">
+              <a href="#"
+                ><img
+                  class="img-fluid px-22"
+                  src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M6.54192%2018.672C7.37793%2018.7732%208.4388%2018.7732%209.87525%2018.7732C11.3117%2018.7732%2012.3726%2018.7732%2013.2086%2018.672M6.54192%2018.672C5.77919%2018.5796%205.20363%2018.4029%204.70078%2018.065C4.61622%2018.0082%204.53378%2017.9483%204.45362%2017.8854C3.45433%2017.1018%203.0299%2015.7956%202.18104%2013.1831C1.33218%2010.5705%200.907749%209.26427%201.25562%208.04298C1.28353%207.94501%201.31502%207.84809%201.35003%207.75243C1.78645%206.55991%202.89762%205.7526%205.11997%204.13797C7.34231%202.52334%208.45349%201.71603%209.7225%201.66947C9.8243%201.66574%209.9262%201.66574%2010.028%201.66947C11.297%201.71603%2012.4082%202.52334%2014.6305%204.13797C16.8529%205.7526%2017.9641%206.55991%2018.4005%207.75243C18.4355%207.84809%2018.467%207.94501%2018.4949%208.04298C18.8427%209.26427%2018.4183%2010.5705%2017.5695%2013.1831C16.7206%2015.7956%2016.2962%2017.1018%2015.2969%2017.8854C15.2167%2017.9483%2015.1343%2018.0082%2015.0497%2018.065C14.5469%2018.4029%2013.9713%2018.5796%2013.2086%2018.672M6.54192%2018.672V18.5997V15.6831C6.54192%2013.8421%208.0343%2012.3497%209.87525%2012.3497C11.7162%2012.3497%2013.2086%2013.8421%2013.2086%2015.6831V18.5997V18.672'%20stroke='black'%20stroke-opacity='0.4'%20stroke-width='1.5'/%3e%3c/svg%3e"
+                  alt="index-button"
+              /></a>
+              <p class="mb-0 fs-small">首頁</p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="../pages/trend.html"
+                ><img
+                  class="img-fluid px-22"
+                  src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.9583%209.16667V14.1667M10.625%205.83333V14.1667M7.29167%2010.8333V14.1667M10.625%2017.5C7.50022%2017.5%205.93783%2017.5%204.84256%2016.7042C4.48883%2016.4472%204.17776%2016.1362%203.92076%2015.7824C3.125%2014.6872%203.125%2013.1248%203.125%2010C3.125%206.87522%203.125%205.31283%203.92076%204.21756C4.17776%203.86383%204.48883%203.55276%204.84256%203.29576C5.93783%202.5%207.50022%202.5%2010.625%202.5C13.7498%202.5%2015.3122%202.5%2016.4074%203.29576C16.7612%203.55276%2017.0722%203.86383%2017.3292%204.21756C18.125%205.31283%2018.125%206.87522%2018.125%2010C18.125%2013.1248%2018.125%2014.6872%2017.3292%2015.7824C17.0722%2016.1362%2016.7612%2016.4472%2016.4074%2016.7042C15.3122%2017.5%2013.7498%2017.5%2010.625%2017.5Z'%20stroke='black'%20stroke-opacity='0.4'%20stroke-width='1.5'%20stroke-linecap='round'/%3e%3c/svg%3e"
+                  alt="analyze"
+              /></a>
+              <p class="mb-0 fs-small">趨勢分析</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="d-flex justify-content-center mt-2">
+            <div class="text-center pt-2">
+              <a href="#"
+                ><img
+                  class="img-fluid px-22"
+                  src="/AAPD-Furby/assets/date-DfJc_j3-.svg"
+                  alt="date"
+              /></a>
+              <p class="mb-0 fs-small">行事曆</p>
+            </div>
+            <div class="text-center pt-2">
+              <a href="#"
+                ><img
+                  class="img-fluid px-22"
+                  src="data:image/svg+xml,%3csvg%20width='21'%20height='20'%20viewBox='0%200%2021%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.4587%204.99999H12.7087C12.7087%206.42673%2011.5521%207.58332%2010.1253%207.58332V8.33332V9.08332C12.3805%209.08332%2014.2087%207.25515%2014.2087%204.99999H13.4587ZM10.1253%208.33332V7.58332C8.69859%207.58332%207.54199%206.42673%207.54199%204.99999H6.79199H6.04199C6.04199%207.25515%207.87016%209.08332%2010.1253%209.08332V8.33332ZM6.79199%204.99999H7.54199C7.54199%203.57325%208.69859%202.41666%2010.1253%202.41666V1.66666V0.916656C7.87016%200.916656%206.04199%202.74483%206.04199%204.99999H6.79199ZM10.1253%201.66666V2.41666C11.5521%202.41666%2012.7087%203.57325%2012.7087%204.99999H13.4587H14.2087C14.2087%202.74483%2012.3805%200.916656%2010.1253%200.916656V1.66666ZM7.62533%2010.8333V11.5833H12.6253V10.8333V10.0833H7.62533V10.8333ZM12.6253%2017.5V16.75H7.62533V17.5V18.25H12.6253V17.5ZM7.62533%2017.5V16.75C6.19859%2016.75%205.04199%2015.5934%205.04199%2014.1667H4.29199H3.54199C3.54199%2016.4218%205.37016%2018.25%207.62533%2018.25V17.5ZM15.9587%2014.1667H15.2087C15.2087%2015.5934%2014.0521%2016.75%2012.6253%2016.75V17.5V18.25C14.8805%2018.25%2016.7087%2016.4218%2016.7087%2014.1667H15.9587ZM12.6253%2010.8333V11.5833C14.0521%2011.5833%2015.2087%2012.7399%2015.2087%2014.1667H15.9587H16.7087C16.7087%2011.9115%2014.8805%2010.0833%2012.6253%2010.0833V10.8333ZM7.62533%2010.8333V10.0833C5.37016%2010.0833%203.54199%2011.9115%203.54199%2014.1667H4.29199H5.04199C5.04199%2012.7399%206.19859%2011.5833%207.62533%2011.5833V10.8333Z'%20fill='black'%20fill-opacity='0.4'/%3e%3c/svg%3e"
+                  alt="setting"
+              /></a>
+              <p class="mb-0 fs-small">設定</p>
+            </div>
+          </div>
+        </div>
+        <div class="ontouch rounded-3 mx-auto mt-3 mb-2"></div>
+      </div>
+    </div>
+  </section>
+</footer>
+
   </body>
 </html>
