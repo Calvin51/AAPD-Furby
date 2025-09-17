@@ -12,9 +12,9 @@
     <!-- navbar -->
     <nav class="navbar bg-orange-100 link-neutral-900">
       <div class="container-fluid px-5 justify-content-start">
-        <a class="nav-link" href="#">返回</a>
+        <a class="nav-link" href="./index.html">返回</a>
         <a
-          class="nav-link active fw-bold fs-5 ms-8"
+          class="nav-link active fw-bold fs-5 ms-9"
           aria-current="page"
           href="#"
         >
@@ -31,10 +31,10 @@
       </div>
     </nav>
     <!-- 聊天室 -->
-    <div class="container bg-white px-5">
+    <div class="container bg-white px-5 pt-4 overflow-hidden">
       <!-- 開頭 -->
       <div
-        class="d-flex rounded-3 bg-orange-200 overflow-hidden mt-4 mb-5 position-relative"
+        class="d-flex rounded-3 bg-orange-200 overflow-hidden mb-5 position-relative"
       >
         <div class="circle rounded-circle bg-secondary z-0"></div>
         <div class="z-1">
@@ -56,9 +56,9 @@
       <!-- 今天標籤 -->
       <div class="container d-flex justify-content-center mb-5 py-1">
         <span
-          class="badge rounded-pill text-bg-neutral-transparent-30"
-          style="--bs-bg-opacity: 0.3"
-          >今天</span
+          class="badge rounded-pill text-bg-neutral-transparent-30 text-center"
+          style="--bs-bg-opacity: 0.3; width: 44px; height: 24px"
+          ><p class="fs-little lh-sm mb-0">今天</p></span
         >
       </div>
       <!-- 選擇毛孩 -->
@@ -109,7 +109,7 @@
                 src="/AAPD-Furby/assets/pet-avatar-dog-plN_kzhw.png"
                 class=""
                 alt="dog"
-                style="width: 56px; height: 56px"
+                style="width: 58px; height: 58px"
               />
             </div>
             <div class="card-body text-primary py-2">
@@ -137,7 +137,7 @@
                 src="/AAPD-Furby/assets/pet-avatar-cat-DNjafocG.png"
                 class=""
                 alt="cat"
-                style="width: 56px; height: 56px"
+                style="width: 58px; height: 58px"
               />
             </div>
             <div class="card-body text-primary py-2">
@@ -216,7 +216,7 @@
           </div>
         </div>
         <!-- 清單 -->
-        <div class="d-flex position-relative overflow-x-auto">
+        <div class="d-flex position-relative">
           <div class="card ms-6 border-0" style="width: 200px">
             <div
               class="card-header position-relative bg-secondary-dark py-4 ps-4"
@@ -391,7 +391,10 @@
           </div>
         </div>
         <!-- 資訊框 -->
-        <div class="card ms-6 border-orange-400 shadow" style="width: 200px">
+        <div
+          class="card ms-6 border-orange-400 shadow mb-9"
+          style="width: 200px"
+        >
           <div class="card-body py-2">
             <p class="card-text fs-little text-neutral-900">
               時間：07/19 五 8:00<br />預設食物：皇家減重飼料<br />餵食量：50g
@@ -420,7 +423,7 @@
     </div>
     <!-- 傳訊欄位 -->
     <div
-      class="container-fluid d-flex py-2 px-5 border-top border-neutral-transparent-5 bg-white position-fixed bottom-0 z-10"
+      class="container-fluid d-flex py-2 px-5 border-top border-neutral-transparent-5 bg-white position-fixed bottom-0 z-3"
       style="--bs-border-opacity: 0.05"
     >
       <div
