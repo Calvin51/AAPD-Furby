@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furby Bot</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar bg-orange-100 link-neutral-900">
+      <div class="container-fluid px-5 justify-content-start">
+        <a class="nav-link" href="#">返回</a>
+        <a
+          class="nav-link active fw-bold fs-5 ms-8"
+          aria-current="page"
+          href="#"
+        >
+          Furby bot
+        </a>
+        <div class="d-flex ms-auto">
+          <a class="nav-link px-ten" href="#">
+            <img src="/assets/images/share.png" alt="share" />
+          </a>
+          <a class="nav-link px-ten" href="#">
+            <img src="/assets/images/Icon.png" alt="share" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- 聊天室 -->
+    <div class="container bg-white px-5">
+      <!-- 開頭 -->
+      <div
+        class="d-flex rounded-3 bg-orange-200 overflow-hidden mt-4 mb-5 position-relative"
+      >
+        <div class="circle rounded-circle bg-secondary z-0"></div>
+        <div class="z-1">
+          <img src="/assets/images/character-assets.png" alt="Furby" />
+        </div>
+        <div class="px-3 py-3 z-1">
+          <div class="px-2 mb-2">
+            <p class="fw-bold text-neutral-900 mb-0">
+              Hi Simon，我是 Furby ！需要幫忙嗎？
+            </p>
+          </div>
+          <div class="p-2">
+            <p class="fs-small text-neutral-transparent-80 lh-sm mb-0">
+              我能幫你新增記錄、設定提醒，還能回答關於照護問題與分析建議～
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 今天標籤 -->
+      <div class="container d-flex justify-content-center mb-5 py-1">
+        <span
+          class="badge rounded-pill text-bg-neutral-transparent-30"
+          style="--bs-bg-opacity: 0.3"
+          >今天</span
+        >
+      </div>
+      <!-- 選擇毛孩 -->
+      <div class="mb-5">
+        <!-- 訊息框 頭像 -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="../assets/images/head.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="/assets/images/tail-left.png"
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              請先選擇毛孩，我們再一起看看需要做什麼吧！
+            </p>
+          </div>
+          <div class="ms-2 pt-forty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 卡片 -->
+        <div class="d-flex">
+          <!-- 狗 -->
+          <div
+            class="card border-neutral-900 ms-6"
+            style="--bs-border-opacity: 0.3"
+          >
+            <div class="text-center px-5 mt-3">
+              <img
+                src="../assets/images/pet-avatar-dog.png"
+                class=""
+                alt="dog"
+                style="width: 56px; height: 56px"
+              />
+            </div>
+            <div class="card-body text-primary py-2">
+              <h5
+                class="card-title fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                Mica
+              </h5>
+              <p
+                class="card-text fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                減重計畫
+              </p>
+            </div>
+          </div>
+          <!-- 貓 -->
+          <div
+            class="card border-neutral-900 ms-3"
+            style="--bs-border-opacity: 0.3"
+          >
+            <div class="text-center px-5 mt-3">
+              <img
+                src="../assets/images/pet-avatar-cat.png"
+                class=""
+                alt="cat"
+                style="width: 56px; height: 56px"
+              />
+            </div>
+            <div class="card-body text-primary py-2">
+              <h5
+                class="card-title fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                來福
+              </h5>
+              <p
+                class="card-text fs-small text-neutral-900 text-center mb-0"
+                style="--bs-text-opacity: 0.8"
+              >
+                日常追蹤
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 選擇毛孩回覆 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="/assets/images/tail-right.png"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            Mica
+          </p>
+        </div>
+      </div>
+      <!-- 幫Mica做什麼 -->
+      <div class="mb-5">
+        <!-- 訊息框 頭像 -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="../assets/images/head.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="/assets/images/tail-left.png"
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              今天想幫 Mica 做什麼呢？目前正在減重中，你可以做這些..
+            </p>
+          </div>
+          <div class="ms-2 pt-forty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 清單 -->
+        <div class="d-flex position-relative overflow-x-auto">
+          <div class="card ms-6 border-0" style="width: 200px">
+            <div
+              class="card-header position-relative bg-secondary-dark py-4 ps-4"
+            >
+              <p class="fs-little fw-bold text-white mb-0">你可能會需要的</p>
+              <img
+                src="/assets/images/option-icon.png"
+                alt=""
+                class="position-absolute"
+                style="top: -12px; right: 8px"
+              />
+            </div>
+            <ul class="list-group list-group-flush shadow">
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                新增餵食記錄
+              </li>
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                新增體重紀錄
+              </li>
+              <li class="list-group-item fs-little fw-bold text-primary">
+                建立提醒任務
+              </li>
+            </ul>
+          </div>
+          <div
+            class="card border-0 position-absolute"
+            style="width: 200px; left: 260px"
+          >
+            <div
+              class="card-header position-relative bg-secondary-dark py-4 ps-4"
+            >
+              <p class="fs-little fw-bold text-white mb-0">其他可以做的事</p>
+              <img
+                src="/assets/images/option-icon.png"
+                alt=""
+                class="position-absolute"
+                style="top: -12px; right: 8px"
+              />
+            </div>
+            <ul class="list-group list-group-flush shadow">
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                留下觀察筆記
+              </li>
+              <li
+                class="list-group-item fs-little fw-bold text-primary border-bottom border-neutral-150"
+              >
+                查看今日健康分析
+              </li>
+              <li class="list-group-item fs-little fw-bold text-primary">
+                標記已完成的提醒
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 新增餵食記錄 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="/assets/images/tail-right.png"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            新增餵食記錄
+          </p>
+        </div>
+      </div>
+      <!-- bot reply 餵了多少 -->
+      <div class="position-relative d-flex mb-5">
+        <img
+          src="../assets/images/head.png"
+          alt="Furby"
+          class="position-absolute z-1"
+          style="top: -4px; left: 0"
+        />
+        <div class="small-circle bg-secondary rounded-circle z-0"></div>
+        <div
+          class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+          style="max-width: 214px"
+        >
+          <img
+            src="/assets/images/tail-left.png"
+            alt=""
+            class="position-absolute z-0"
+            style="left: -4px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            好的！請問今天餵了多少飼料呢？（單位：g / 克）
+          </p>
+        </div>
+        <div class="ms-2 pt-forty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+      </div>
+      <!-- 回覆餵了多少 -->
+      <div class="d-flex mb-5">
+        <div class="ms-auto pt-twenty">
+          <p class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50">
+            08:00
+          </p>
+        </div>
+        <div class="position-relative rounded-1 bg-orange-100 px-3 py-2 ms-2">
+          <img
+            src="/assets/images/tail-right.png"
+            alt=""
+            class="position-absolute z-0"
+            style="right: -5px; bottom: 0"
+          />
+          <p
+            class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+            style="--bs-text-opacity: 0.8"
+          >
+            50
+          </p>
+        </div>
+      </div>
+      <!-- bot reply 已新增 -->
+      <div class="mb-8">
+        <!-- bot reply -->
+        <div class="position-relative d-flex mb-4">
+          <img
+            src="../assets/images/head.png"
+            alt="Furby"
+            class="position-absolute z-1"
+            style="top: -4px; left: 0"
+          />
+          <div class="small-circle bg-secondary rounded-circle z-0"></div>
+          <div
+            class="bg-neutral-150 rounded-1 ms-6 px-3 py-2 position-relative"
+            style="max-width: 214px"
+          >
+            <img
+              src="/assets/images/tail-left.png"
+              alt=""
+              class="position-absolute z-0"
+              style="left: -4px; bottom: 0"
+            />
+            <p
+              class="fs-little mb-0 text-neutral-transparent-80 position-relative z-1"
+              style="--bs-text-opacity: 0.8"
+            >
+              已新增餵食紀錄
+            </p>
+          </div>
+          <div class="ms-2 pt-twenty">
+            <p
+              class="fs-small mb-0 text-neutral-transparent-50 text-opacity-50"
+            >
+              08:00
+            </p>
+          </div>
+        </div>
+        <!-- 資訊框 -->
+        <div class="card ms-6 border-orange-400 shadow" style="width: 200px">
+          <div class="card-body py-2">
+            <p class="card-text fs-little text-neutral-900">
+              時間：07/19 五 8:00<br />預設食物：皇家減重飼料<br />餵食量：50g
+            </p>
+          </div>
+          <div class="d-flex">
+            <div
+              class="w-50 text-center py-2 border-top border-end border-orange-400"
+            >
+              <a
+                href="#"
+                class="link-primary text-decoration-none fw-bold fs-little"
+                >修改</a
+              >
+            </div>
+            <div class="w-50 text-center py-2 border-top border-orange-400">
+              <a
+                href="#"
+                class="link-primary text-decoration-none fw-bold fs-little"
+                >前往查看</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 傳訊欄位 -->
+    <div
+      class="container-fluid d-flex py-2 px-5 border-top border-neutral-transparent-5 bg-white position-fixed bottom-0 z-10"
+      style="--bs-border-opacity: 0.05"
+    >
+      <div
+        class="rounded-circle bg-neutral-transparent-5 p-ten me-2"
+        style="width: 44px; height: 44px; --bs-bg-opacity: 0.05"
+      >
+        <img src="/assets/images/camera.png" alt="" />
+      </div>
+      <input
+        type="email"
+        class="form-control bg-neutral-transparent-5 border-0 rounded-pill"
+        id="chatInput"
+        placeholder="需要為你做什麼呢？"
+        style="--bs-bg-opacity: 0.05; height: 44px; width: 190px"
+      />
+      <div class="p-six my-1 me-2 btn">
+        <img src="/assets/images/microphone-01.png" alt="" />
+      </div>
+      <div
+        class="rounded-circle bg-primary text-center pt-1 my-1"
+        style="width: 36px; height: 36px"
+      >
+        <img src="/assets/images/top arrow.png" alt="" />
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
