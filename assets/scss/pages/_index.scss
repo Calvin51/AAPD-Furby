@@ -1,3 +1,176 @@
-.index-title {
-  font-size: 100px;
+.hero-gradient {
+  background: linear-gradient(180deg, $orange-300 0%, $orange-100 50%, $green-500 100%);
+}
+
+
+
+.cloud-tw {
+  position: absolute;
+  top: 32px;
+  left: -10px;
+}
+
+
+
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $primary;
+    border-radius: 999px;
+  }
+}
+
+.dog-avatar-32 {
+  padding: 1px;
+  width: 32px;
+  height: 32px;
+  object-fit: cover
+}
+
+.circle-one {
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  left: -15px;
+}
+
+.circle-two {
+  position: absolute;
+  z-index: 0;
+  top: 40px;
+  right: 0;
+}
+
+.msg-txt {
+  color: $black;
+}
+
+.dog-avatar-84 {
+  background-color: $white;
+  padding: 2px;
+  width: 84px;
+  height: 84px;
+  object-fit: cover
+}
+
+.cat-avatar-32 {
+  width: 32px;
+  height: 32px;
+  object-fit: cover
+}
+
+.pet-avatar {
+  position: absolute;
+  top: -25px;
+}
+
+.bubble {
+  background-color: $green-700;
+}
+
+.bubble-left {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
+
+.health-bg {
+  background-color: $orange-100;
+
+}
+
+.border-orange {
+  border: 1px solid $orange-300;
+}
+
+.fs-color-700 {
+  color: $neutral-700;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.overlay {
+  background-color: rgba($color: $black, $alpha: 0.5);
+      position: fixed;
+      z-index: 999;
+      inset: 0;
+      display: none; /* 預設隱藏 */
+      justify-content: center;
+      align-items: flex-end; /* 視窗從下方彈出 */
+    }
+
+    /* 視窗 */
+    .popup {
+      width: 100%;
+      max-width: 400px;
+      background: $neutral-100;
+      border-radius: 16px 16px 0 0;
+      padding:0 24px 24px;
+      box-shadow: 0 -8px 20px rgba(0,0,0,0.2);
+      transform: translateY(100%);
+      animation: none;
+    }
+
+    /* 顯示時觸發動畫 */
+    .overlay.active {
+      display: flex;
+    }
+    .overlay.active .popup {
+      animation: slideUpBounce 0.6s forwards;
+    }
+
+    @keyframes slideUpBounce {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0); /* 回到正常位置 */
+      }
+    }
+
+    /* 關閉按鈕 */
+    .close-btn {
+      display: block;
+      margin: 0 auto;
+      padding: 3px 30px;
+      border: none;
+      background: #8C7C76;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+.bg-footer {
+  background-color: $white;
+}
+
+.px-22 {
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.firby-ava-m {
+  position: absolute;
+  top: -35%;
+  z-index: 6;
+}
+
+.ontouch {
+  width: 144px;
+  height: 5px;
+  background: transparent; /* 預設透明 */
+  transition: background 0.3s ease;
+
+  &:active {
+    background: $black;
+  }
 }
