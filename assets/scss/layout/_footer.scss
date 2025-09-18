@@ -9,18 +9,7 @@
 
 .firby-ava-m {
   position: absolute;
-  top: -35%;
+  top: -30%;
   left: 39%;
   right: 35%;
-}
-
-.ontouch {
-  width: 144px;
-  height: 5px;
-  background: transparent; /* 預設透明 */
-  transition: background 0.3s ease;
-
-  &:active {
-    background: $black;
-  }
 }
