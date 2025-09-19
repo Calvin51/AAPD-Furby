@@ -1,0 +1,43 @@
+.hero-gradient {
+  background: linear-gradient(180deg, $orange-300 0%, $orange-100 50%, $green-500 100%);
+}
+
+.pt-22 {
+  padding-top: 22px;
+}
+
+.text-neutral-900 {
+  color: #483D39;
+}
+
+.text-neutral-700 {
+  color: #756761;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.ms-50px {
+  margin-left: 8%;
+
+  @media (max-width:420px) {
+    margin-left: 6%;
+  }
+}
+
+.temp-dot {
+
+  span {
+    color: #F37A73;
+    margin-left: 2px;
+  }
+  &::before {
+    background-color: #F37A73;
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 40px;
+  }
+}
