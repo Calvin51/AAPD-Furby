@@ -360,11 +360,13 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "white": #FFFEFD, //改
+  "yellow-100":#F0D36B,
   "orange-100": $orange-100, //改 #FDE9CF
   "orange-200": $orange-200, //改 #FEF4E7
   "orange-300": $orange-300,  //改 #FDF1EC
   "orange-400": #E6D9D3,  //改 #E6D9D3
   "neutral-150": #EDEBE9,  //改
+  "neutral-500": #A2928C,  //改
   "neutral-800": #5E524C,  //改
   "neutral-900": #483D39,  //改
   "neutral-transparent-5": rgba(72, 61, 57, 0.05),  //改 透明度預設為一，另外加style調整透明度
@@ -473,13 +475,16 @@ $spacers: ( //改
   7: $spacer * 3.5,//56px
   8: $spacer * 4,//64px
   9: $spacer * 5,//80px
+  two: 2px,
   six: 6px,
   ten: 10px,
+  fourteen: 14px,
   twenty: 20px,
   twentytwo: 22px,
   thirtytwo: 32px,
   forty: 40px,
   pointfive: 0.5px,
+  large: 120px,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
