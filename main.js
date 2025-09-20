@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 console.log('Hello world');
 
+
 // Calendar + tabs interactions
 (() => {
   const scroller = document.getElementById('scroller');
@@ -85,3 +86,4 @@ console.log('Hello world');
 
   render(current, 13);
 })();
+
