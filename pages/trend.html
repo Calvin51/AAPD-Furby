@@ -14,96 +14,141 @@
   </head>
   <body>
     <!-- header -->
-    <main class="container hero-gradient">
+    <main class="container hero-gradient pb-90">
+      <%- include('./layout/header'); -%>
       <!-- user -->
       <div class="py-3 mb-4">
         <img
           src="../assets/images/dog.png"
           alt="dog"
-          class="user-image rounded-circle me-4"
+          class="user-image rounded-circle border border-2 border-primary me-4"
         />
         <img
           src="../assets/images/cat.png"
           alt="cat"
-          class="user-image rounded-circle"
+          class="user-image rounded-circle border border-2 border-success"
         />
       </div>
       <!-- 減重計畫 -->
-      <div class="d-flex rounded-4 mb-thirtytwo">
-        <img
-          src="../assets/images/brand-1.png"
-          alt="brand-1"
-          class="brand-img"
-        />
-        <div class="p-3">
-          <h3 class="mb-2">減重計畫</h3>
+      <div class="d-flex rounded-3 bg-orange-200 overflow-hidden mb-5 position-relative">
+        <div class="circle-trend rounded-circle bg-secondary z-0"></div>
+        <div class="z-1">
+          <img src="/assets/images/character-assets.png" alt="Furby" />
+        </div>
+        <div class="px-3 py-3 z-1">
+          <div class="px-2 mb-2">
+            <p class="fw-bold text-neutral-900 mb-0">減重計畫</p>
+          </div>
           <div class="p-2">
-            <p>Mica 的體重穩定下降中，繼續保持 ~</p>
+            <p class="fs-small text-neutral-transparent-80 lh-sm mb-0">
+              Mica 的體重穩定下降中，繼續保持 ~
+            </p>
           </div>
         </div>
       </div>
       <!-- 體重變化 -->
       <div class="mb-5">
-        <div class="d-flex justify-content-between mb-2">
-          <h2 class="fs-5 py-2">體重變化</h2>
-          <a href="#" class="text-neutral-800 text-decoration-none">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">體重變化</h2>
+          <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="material-icons-outlined"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
           </a>
         </div>
-        <div
-          class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900"
-        >
+        <div class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900">
           <div>
-            <h3 class="mb-1">體重減少</h3>
-            <p>2025/07/20-2025/07/26</p>
+            <h3 class="mb-1 fs-little fw-bold">體重減少</h3>
+            <p class="fs-small mb-0">2025/07/20-2025/07/26</p>
           </div>
-          <div class="d-flex">
-            <p class="me-1 fs-5">0.25</p>
-            <p>kg</p>
+          <div class="d-flex align-items-end">
+            <p class="me-1 fs-5 fw-bold mb-0">0.25</p>
+            <p class="fs-small mb-0">kg</p>
           </div>
         </div>
-        <div class="bg-white rounded-4 p-5">
-          <h4 class="text-neutral-500">體重減少</h4>
-          <div class="d-flex">
-            <p class="fs-large text-neutral-900">2.1</p>
-            <p class="text-neutral-900">%</p>
+        <div class="bg-white rounded-4 p-5 position-relative">
+          <h4 class="text-neutral-500 fs-small">體重減少</h4>
+          <div class="d-flex align-items-end">
+            <p class="mb-0 me-1 text-neutral-900 fs-large fw-bold">2.1</p>
+            <p class="mb-0 text-neutral-900 fs-small">%</p>
+          </div>
+          <div class="portion z-1">
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-1 text-neutral-900 fs-5 fw-bold">10.6</p>
+              <p class="mb-0 text-neutral-900 fs-small">%</p>
+            </div>
+            <p class="mb-0 text-center text-neutral-500 fs-small">目前達成</p>
+          </div>
+          <div class="card">
+            <canvas id="myDoughnutChart2" width="400" height="400"></canvas>
+            <script>
+              var ctx = document.getElementById("myDoughnutChart2").getContext("2d");
+              const myDoughnutChart2 = new Chart(ctx, {
+                type: "doughnut", // 圖表類型
+                data: {
+                  labels: ["達成", "未達成"], // 標籤
+                  datasets: [
+                    {
+                      label: "數據集",
+                      data: [10.6, 89.4], // 資料
+                      backgroundColor: [
+                        "#F39111", // 達成
+                        "#E6D9D3", // 未達成
+                      ],
+                      borderWidth: 0,
+                      borderRadius: 16,
+                      spacing: 5,
+                    },
+                  ],
+                },
+                options: {
+                  cutout: "77%",
+                  rotation: 180,
+                  responsive: true,
+                  plugins: {
+                    legend: {
+                      display: false, // 隱藏圖例
+                    },
+                    tooltip: {
+                      enabled: true, // 啟用提示
+                    },
+                  },
+                },
+              });
+            </script>
           </div>
         </div>
       </div>
       <!-- 熱量消耗 -->
       <div class="mb-5">
         <div class="d-flex justify-content-between mb-2">
-          <h2 class="fs-5 py-2">熱量消耗</h2>
-          <a href="#" class="text-neutral-800 text-decoration-none">
+          <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">熱量消耗</h2>
+          <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="material-icons-outlined"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
           </a>
         </div>
         <div
-          class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900"
+          class="d-flex justify-content-between align-items-center bg-white rounded-4 mb-2 p-4 text-neutral-900"
         >
           <div>
-            <h3 class="mb-1">平均消耗</h3>
-            <p>2025/07/20-2025/07/26</p>
+            <h3 class="mb-1 fs-little fw-bold">平均消耗</h3>
+            <p class="fs-small mb-0">2025/07/20-2025/07/26</p>
           </div>
-          <div class="d-flex">
-            <p class="me-1 fs-5">387</p>
-            <p>kcal</p>
+          <div class="d-flex align-items-end">
+            <p class="me-1 fs-5 fw-bold mb-0">387</p>
+            <p class="fs-small mb-0">kcal</p>
           </div>
         </div>
         <div class="bg-white rounded-4 p-5">
-          <h4 class="text-neutral-500">本週達標</h4>
-          <div class="d-flex">
-            <p class="fs-large text-neutral-900">3</p>
-            <p class="text-neutral-900">天</p>
+          <h4 class="text-neutral-500 fs-small">本週達標</h4>
+          <div class="d-flex align-items-end">
+            <p class="mb-0 me-1 text-neutral-900 fs-large fw-bold">3</p>
+            <p class="mb-0 text-neutral-900 fs-small">天</p>
           </div>
           <div>
             <canvas id="stackedAreaChart" width="400" height="200"></canvas>
             <script>
-              var ctx = document
-                .getElementById("stackedAreaChart")
-                .getContext("2d");
+              var ctx = document.getElementById("stackedAreaChart").getContext("2d");
 
               new Chart(ctx, {
                 type: "line", // 使用折線圖類型
@@ -166,32 +211,37 @@
       <!-- 熱量攝取 -->
       <div class="mb-5">
         <div class="d-flex justify-content-between mb-2">
-          <h2 class="fs-5 py-2">熱量攝取</h2>
-          <a href="#" class="text-neutral-800 text-decoration-none">
+          <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">熱量攝取</h2>
+          <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="material-icons-outlined"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
           </a>
         </div>
         <div
-          class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900"
+          class="d-flex justify-content-between align-items-center bg-white rounded-4 mb-2 p-4 text-neutral-900"
         >
           <div>
-            <h3 class="mb-1">平均攝取</h3>
-            <p>2025/07/20-2025/07/26</p>
+            <h3 class="mb-1 fs-little fw-bold">平均攝取</h3>
+            <p class="fs-small mb-0">2025/07/20-2025/07/26</p>
           </div>
-          <div class="d-flex">
-            <p class="me-1 fs-5">637</p>
-            <p>kcal</p>
+          <div class="d-flex align-items-end">
+            <p class="me-1 fs-5 fw-bold mb-0">637</p>
+            <p class="fs-small mb-0">kcal</p>
           </div>
         </div>
-        <div class="bg-white rounded-4 p-5">
-          <h4 class="text-neutral-500">來源佔比</h4>
+        <div class="bg-white rounded-4 p-5 position-relative">
+          <h4 class="text-neutral-500 fs-small">來源佔比</h4>
+          <div class="portion z-1">
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-1 text-neutral-900 fs-5 fw-bold">83</p>
+              <p class="mb-0 text-neutral-900 fs-small">%</p>
+            </div>
+            <p class="mb-0 text-center text-neutral-500 fs-small">正餐</p>
+          </div>
           <div class="card">
             <canvas id="myDoughnutChart" width="400" height="400"></canvas>
             <script>
-              var ctx = document
-                .getElementById("myDoughnutChart")
-                .getContext("2d");
+              var ctx = document.getElementById("myDoughnutChart").getContext("2d");
               const myDoughnutChart = new Chart(ctx, {
                 type: "doughnut", // 圖表類型
                 data: {
@@ -204,7 +254,7 @@
                         "#F39111", // 正餐
                         "#E6D9D3", // 非正餐
                       ],
-                      borderWidth: 1,
+                      borderWidth: 0,
                       borderRadius: 16,
                       spacing: 5,
                     },
@@ -228,32 +278,31 @@
           </div>
         </div>
       </div>
-
       <!-- 生理數值 -->
       <div class="mb-5">
         <div class="d-flex justify-content-between mb-2">
-          <h2 class="fs-5 py-2">生理數值</h2>
-          <a href="#" class="text-neutral-800 text-decoration-none">
+          <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">生理數值</h2>
+          <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="material-icons-outlined"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
           </a>
         </div>
         <div
-          class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900"
+          class="d-flex justify-content-between align-items-center bg-white rounded-4 mb-2 p-4 text-neutral-900"
         >
           <div>
-            <h3 class="mb-1">平均靜止心律</h3>
-            <p>2025/07/20-2025/07/26</p>
+            <h3 class="mb-1 fs-little fw-bold">平均靜止心律</h3>
+            <p class="mb-0 fs-small">2025/07/20-2025/07/26</p>
           </div>
-          <div class="d-flex">
-            <p class="me-1 fs-5">70.3</p>
-            <p>bpm</p>
+          <div class="d-flex align-items-end">
+            <p class="mb-0 me-1 fs-5 fw-bold">70.3</p>
+            <p class="mb-0 fs-small">bpm</p>
           </div>
         </div>
       </div>
     </main>
     <!-- footer -->
-
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
