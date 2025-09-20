@@ -30,7 +30,9 @@
         />
       </div>
       <!-- 減重計畫 -->
-      <div class="d-flex rounded-3 bg-orange-200 overflow-hidden mb-5 position-relative">
+      <div
+        class="d-flex rounded-3 bg-orange-200 overflow-hidden mb-5 position-relative"
+      >
         <div class="circle-trend rounded-circle bg-secondary z-0"></div>
         <div class="z-1">
           <img src="/assets/images/character-assets.png" alt="Furby" />
@@ -52,10 +54,14 @@
           <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">體重變化</h2>
           <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom">
+              arrow_forward
+            </span>
           </a>
         </div>
-        <div class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900">
+        <div
+          class="d-flex justify-content-between bg-white rounded-4 mb-2 p-4 text-neutral-900"
+        >
           <div>
             <h3 class="mb-1 fs-little fw-bold">體重減少</h3>
             <p class="fs-small mb-0">2025/07/20-2025/07/26</p>
@@ -81,7 +87,9 @@
           <div class="card">
             <canvas id="myDoughnutChart2" width="400" height="400"></canvas>
             <script>
-              var ctx = document.getElementById("myDoughnutChart2").getContext("2d");
+              var ctx = document
+                .getElementById("myDoughnutChart2")
+                .getContext("2d");
               const myDoughnutChart2 = new Chart(ctx, {
                 type: "doughnut", // 圖表類型
                 data: {
@@ -122,9 +130,14 @@
       <div class="mb-5">
         <div class="d-flex justify-content-between mb-2">
           <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">熱量消耗</h2>
-          <a href="#" class="py-3 text-neutral-800 text-decoration-none">
+          <a
+            href="./calConsume.html"
+            class="py-3 text-neutral-800 text-decoration-none"
+          >
             看更多
-            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom">
+              arrow_forward
+            </span>
           </a>
         </div>
         <div
@@ -148,7 +161,9 @@
           <div>
             <canvas id="stackedAreaChart" width="400" height="200"></canvas>
             <script>
-              var ctx = document.getElementById("stackedAreaChart").getContext("2d");
+              var ctx = document
+                .getElementById("stackedAreaChart")
+                .getContext("2d");
 
               new Chart(ctx, {
                 type: "line", // 使用折線圖類型
@@ -214,7 +229,9 @@
           <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">熱量攝取</h2>
           <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom">
+              arrow_forward
+            </span>
           </a>
         </div>
         <div
@@ -241,7 +258,9 @@
           <div class="card">
             <canvas id="myDoughnutChart" width="400" height="400"></canvas>
             <script>
-              var ctx = document.getElementById("myDoughnutChart").getContext("2d");
+              var ctx = document
+                .getElementById("myDoughnutChart")
+                .getContext("2d");
               const myDoughnutChart = new Chart(ctx, {
                 type: "doughnut", // 圖表類型
                 data: {
@@ -284,7 +303,9 @@
           <h2 class="fs-5 py-2 text-neutral-900 fw-bold fs-3">生理數值</h2>
           <a href="#" class="py-3 text-neutral-800 text-decoration-none">
             看更多
-            <span class="ps-1 material-icons-outlined align-bottom"> arrow_forward </span>
+            <span class="ps-1 material-icons-outlined align-bottom">
+              arrow_forward
+            </span>
           </a>
         </div>
         <div

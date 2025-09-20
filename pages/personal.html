@@ -1,145 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個別紀錄</title>
+  </head>
 
-<body>
+  <body>
     <%- include('./layout/header'); -%>
-        <section class="hero-gradient">
-            <div class="container">
-                <div class="row justify-content-center mb-6">
-                    <div class="col-10">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <a class="text-decoration-none d-inline-block text-black fw-bold" href="./index.html">返回</a>
-                            <h2 class="fs-4 fw-bold mb-0">個別毛孩</h2>
-                            <div style="width: 2rem;"></div> <!-- 佔位符保持標題居中 -->
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center position-relative">
-                    <div class="pet-avatar text-center">
-                        <div class="position-relative">
-                            <img src="../assets/images/dog.svg"
-                                class="rounded-circle border border-3 border-primary dog-avatar-84" alt="頭像">
-                        </div>
-                    </div>
-                    <div class="col-10 bg-white p-4 rounded-4 mb-1 shadow mb-3">
-                        <div class="d-flex justify-content-between mb-4">
-                            <div>
-                                <p class="mb-1 fs-5 fw-bold text-black">Mica</p>
-                                <p class="mb-0 fs-7 fw-bold fs-color-700">15 歲 1 個月 3 天</p>
-                            </div>
-                            <div>
-                                <img class="mb-1" src="../assets/images/mood-icon.svg" alt="mood-icon">
-                                <p class="mb-0 fw-bold fs-color-700">開心</p>
-                            </div>
-                        </div>
-                        <div class="position-relative d-flex align-items-start">
-                            <!-- 頭像 -->
-                            <div class="me-2 flex-shrink-0">
-                                <img src="../assets/images/furbyBot-ava.svg" alt="furbyBot-ava" class="rounded-circle"
-                                    width="48">
-                            </div>
-                            <div class="position-relative flex-grow-1">
-                                <div class="p-2 bubble text-white rounded-1 px-3 py-2 w-100">
-                                    <p class="fs-7 mb-0">
-                                        Mica今天心情不錯,要注意不要餵食過量喔！
-                                    </p>
-                                </div>
-                                <div class="bubble-left translate-middle-x">
-                                    <img src="../assets/images/氣泡.svg" alt="氣泡">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container pb-120">
-                    <div class="row justify-content-center flex-wrap gap-3">
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/dog-pet-card.svg" alt="dog-pet-card">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">運動量</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">3,209<span class="fs-8">步</span></p>
-                                </div>
-                                <p class="mb-0 fs-8"><span class="text-neutral-700">目標：4,000步</span></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/餵食量.svg" style="width: 32px; height: 32px;" alt="dog-pet-card">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">餵食量</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">190<span class="fs-8">kcal</span></p>
-                                </div>
-                                <p class="mb-0 fs-8"><span class="text-neutral-700">目標：4,000步</span></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="./petweight.html">
-                                <img src="../assets/images/weight.svg" style="width: 32px; height: 32px;" alt="dog-pet-card">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">體重</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">11.6<span class="fs-8">kg</span></p>
-                                </div>
-                                <p class="mb-0 fs-8"><span class="text-neutral-700">比上月- 0.2kg</span></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/toilet-icon.svg" alt="toilet-icon">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">排便</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">稍硬</p>
-                                </div>
-                                <p class="mb-0 fs-8"></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/temp-icon.svg" alt="dog-pet-card">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">體溫</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">39.6 <span class="fs-8"> °C</span></p>
-                                </div>
-                                <p class="mb-0 fs-8 temp-dot"><span class="text-neutral-700">偏高</span></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/health-icon.svg" style="width: 32px; height: 32px;" alt="health-icon">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">心跳</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">80<span class="fs-8">次 / 分</span></p>
-                                </div>
-                                <p class="mb-0 fs-8"><span class="text-neutral-700"></span></p>
-                            </a>
-                        </div>
-                        <div class="col-5 bg-white rounded-4 pt-22 pb-3 me-auto ms-50px">
-                            <a class="text-decoration-none" href="#">
-                                <img src="../assets/images/breathe.svg" style="width: 32px; height: 32px;" alt="dog-pet-card">
-                                <div>
-                                    <p class="mb-0 fs-7 fw-bold text-neutral-900">呼吸</p>
-                                    <p class="mb-0 fs-3 fw-bold text-neutral-900">40<span class="fs-8">次 / 分</span></p>
-                                </div>
-                                <p class="mb-0 fs-8 text-white">11111<span class="text-white">1111111</span></p>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
+    <section class="hero-gradient">
+      <div class="container">
+        <div class="row justify-content-center mb-6">
+          <div class="col-10">
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                class="text-decoration-none d-inline-block text-black fw-bold"
+                href="./index.html"
+                >返回</a
+              >
+              <h2 class="fs-4 fw-bold mb-0">個別紀錄</h2>
+              <div style="width: 2rem"></div>
+              <!-- 佔位符保持標題居中 -->
             </div>
-        </section>
-        <%- include('./layout/footer'); -%>
+          </div>
+        </div>
+        <div class="row justify-content-center position-relative">
+          <div class="pet-avatar text-center">
+            <div class="position-relative">
+              <img
+                src="../assets/images/dog.svg"
+                class="rounded-circle border border-3 border-primary dog-avatar-84"
+                alt="頭像"
+              />
+            </div>
+          </div>
+          <div class="col-10 bg-white p-4 rounded-4 mb-1 shadow mb-3">
+            <div class="d-flex justify-content-between mb-4">
+              <div>
+                <p class="mb-1 fs-5 fw-bold text-black">Mica</p>
+                <p class="mb-0 fs-7 fw-bold fs-color-700">15 歲 1 個月 3 天</p>
+              </div>
+              <div>
+                <img
+                  class="mb-1"
+                  src="../assets/images/mood-icon.svg"
+                  alt="mood-icon"
+                />
+                <p class="mb-0 fw-bold fs-color-700">開心</p>
+              </div>
+            </div>
+            <div class="position-relative d-flex align-items-start">
+              <!-- 頭像 -->
+              <div class="me-2 flex-shrink-0">
+                <img
+                  src="../assets/images/furbyBot-ava.svg"
+                  alt="furbyBot-ava"
+                  class="rounded-circle"
+                  width="48"
+                />
+              </div>
+              <div class="position-relative flex-grow-1">
+                <div class="p-2 bubble text-white rounded-1 px-3 py-2 w-100">
+                  <p class="fs-7 mb-0">
+                    Mica今天心情不錯,要注意不要餵食過量喔！
+                  </p>
+                </div>
+                <div class="bubble-left translate-middle-x">
+                  <img src="../assets/images/氣泡.svg" alt="氣泡" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pb-120">
+          <div class="row justify-content-center flex-wrap gap-3">
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="./calConsume.html">
+                <img
+                  src="../assets/images/dog-pet-card.svg"
+                  alt="dog-pet-card"
+                />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">運動量</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    3,209<span class="fs-8">步</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8">
+                  <span class="text-neutral-700">目標：4,000步</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="#">
+                <img
+                  src="../assets/images/餵食量.svg"
+                  style="width: 32px; height: 32px"
+                  alt="dog-pet-card"
+                />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">餵食量</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    190<span class="fs-8">kcal</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8">
+                  <span class="text-neutral-700">目標：4,000步</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="./petweight.html">
+                <img
+                  src="../assets/images/weight.svg"
+                  style="width: 32px; height: 32px"
+                  alt="dog-pet-card"
+                />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">體重</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    11.6<span class="fs-8">kg</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8">
+                  <span class="text-neutral-700">比上月- 0.2kg</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="#">
+                <img src="../assets/images/toilet-icon.svg" alt="toilet-icon" />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">排便</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">稍硬</p>
+                </div>
+                <p class="mb-0 fs-8"></p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="#">
+                <img src="../assets/images/temp-icon.svg" alt="dog-pet-card" />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">體溫</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    39.6 <span class="fs-8"> °C</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8 temp-dot">
+                  <span class="text-neutral-700">偏高</span>
+                </p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3">
+              <a class="text-decoration-none" href="#">
+                <img
+                  src="../assets/images/health-icon.svg"
+                  style="width: 32px; height: 32px"
+                  alt="health-icon"
+                />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">心跳</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    80<span class="fs-8">次 / 分</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8"><span class="text-neutral-700"></span></p>
+              </a>
+            </div>
+            <div class="col-5 bg-white rounded-4 pt-22 pb-3 me-auto ms-50px">
+              <a class="text-decoration-none" href="#">
+                <img
+                  src="../assets/images/breathe.svg"
+                  style="width: 32px; height: 32px"
+                  alt="dog-pet-card"
+                />
+                <div>
+                  <p class="mb-0 fs-7 fw-bold text-neutral-900">呼吸</p>
+                  <p class="mb-0 fs-3 fw-bold text-neutral-900">
+                    40<span class="fs-8">次 / 分</span>
+                  </p>
+                </div>
+                <p class="mb-0 fs-8 text-white">
+                  11111<span class="text-white">1111111</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
 
-            <script type="module" src="../main.js"></script>
-
-</body>
-
+    <script type="module" src="../main.js"></script>
+  </body>
 </html>
