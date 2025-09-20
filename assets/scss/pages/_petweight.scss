@@ -1,0 +1,47 @@
+.weight-pic-ava {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 120px;
+}
+
+.weight-bubble {
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+}
+
+.bg-orange-100 {
+    background-color: $orange-100;
+}
+
+.scroll-container {
+  padding-left: 1rem; /* 確保左側有間距 */
+  padding-right: 1rem; /* 確保右側也有間距 */
+  gap: 1.5rem; /* 使用 gap 讓每個卡片之間有間距 */
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+
+ .scroll-drag {
+      cursor: grab;
+      width: 100%;
+    }
+    .scroll-drag:active {
+      cursor: grabbing;
+    }
+.weight-info {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.bir-ds {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.text-neutral-500 {
+    color: #A2928C;
+}
